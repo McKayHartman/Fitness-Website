@@ -4,169 +4,253 @@
 
 #### Problem Statement
 
-*Provide a statement to summarize the problem solved by your project according to the following structure (which is based on the OpenUP Vision Template):*
-
-The problem of
-Irregular or unproductive fitness sessions
-affects
-people who want to reach their fitness goals;
-the impact of which is
-Ineffective workout routines resulting in little to no progress.
-
-
-*Example of a problem statement: “The problem of inefficient prioritization of homework assignments affects college students; the impact of which is delivering assignments past due and receiving low grades.” The problem should read as a problem (must be something bad that makes people spend time or money in an inefficient way.*
+The problem of **irregular or unproductive fitness sessions** affects **people who want to reach their fitness goals;** the impact of which is
+**ineffective workout routines resulting in little to no progress.**
 
 #### Production Position Statement
 
-*A product position statement communicates the intent of the application and the importance of the project to all concerned personnel. The product should mitigate the aforementioned problem. Provide a statement according to the following structure:*
-
-For
-Internet users
-Who
-Struggle with fitness planning,
-The Fitness Planner is a website
-That
-Assists users in planning and developing fitness routines and setting and completing fitness goals for free
-Unlike
-MyFitnessPal,
-Our product
-Is a free website that centralizes and automates all fitness planning functions.
-
-*Example of a product position statement: “For college students who have many parallel homework assignments, MyPrioritizationApp is a planning app that crowdsources the identification of complexity and time necessary to accomplish assignments, supporting the informed prioritization; unlike myHomework Student Planner, our product does not rely on the judgment of a student who hasn’t started the homework yet.” Make sure your product position statement is related to your problem.*
+For **internet users** who **struggle with fitness planning, the fitness planner is a website** that **assists users in planning and developing fitness routines and setting and completing fitness goals for free** unlike **MyFitnessPal,** our product **is a free website that centralizes and automates all fitness planning functions.**
 
 #### Value Proposition and Customer Segment
 
-*Report the value propositions and customer segments of your product. Make sure that your value proposition is coherent with the product position statement and contains the following elements:*
+Value Proposition: We help fitness newcomers build confidence and independence by offering an online learning platform that teaches newcomers the best way to begin and supports them into becoming consistent.
 
-i) What our product is: Our product is an easy-to-use fitness planning and tracking website.
-ii) Our target customer: Our target customer are internet users who struggle with creating workout routines and those that find it difficult to reach their fitness goals.
-iii) The value our product provides: We provide a product that is both minimal and efficient so that it provides the easiest user experience, making it less time-consuming to use a workout planner.
-iv) Why the product is unique: The product is unique because it will be less feature-heavy, more user-friendly, and will be without a subscription.
-
-Consumer segment: Internet users who have busy schedules
-
-***Grading criteria (3 points, 1 for each section): The content of the subsections should contain all the required elements, follow the provided template, and be consistent with each other. The text should not contain typos or grammar issues.***
+Customer Segment: Fitness newcomers.
 
 ## 2. Stakeholders
-Users who struggle with planning their workouts
--Keeping mental notes of fitness goals does not improve routines
-Users who don’t want to pay for expensive apps
--Most alternatives and competitors have monthly or annual fees that deter users
-Personal trainers
--Personal trainers can use it for each of their clients to keep track of statistics and fitness habits
 
+- User:
+  - Someone who struggles with creating workout routines and plans.
+  - Does not find that keeping mental notes of fitness goals improves routines.
+  - Someone who does not want to pay for expensive apps.
+  - Most alternatives and competitors have monthly or annual fees that deter users.
+- Personal trainers:
+  - Personal trainers can use the website for each of their clients to keep track of statistics and fitness habits.
+- Developer:
+  - Develops, tests, maintains, and reflects on the project at every step of development.
+  - Interacts with users frequently to determine best direction for the product.
+- Competitor:
+  - Provides a reference of a system that is not serving the gym newcomers audience well enough.
+  - Creates an incentive for developing a clean and well-tailored product.
 
 ## 3. Functional Requirements (Features)
 
-*Make a numbered list of requirements for your software. Just self-explanatory titles are enough at this point. Remember that requirements should deliver the value proposition and they must be consistent with the interviews you performed for the previous deliverable. You can talk again to your clients to help define the requirements. While writing the requirements, focus on the capabilities needed and not on how they should be implemented.*
-
-***Grading criteria (2 points): The list should be comprehensive (remember that you are not expected to implement all the requirements by the end of the course but you should list them). Follow the same pattern to describe all the requirements. The list of requirements should be coherent with the previous sections.***
+1. Website for desktop and mobile
+2. Functional calendar display for planning workouts
+   - Edits and additions can be made
+   - Tracks past workouts
+   - System to track streaks
+3. Workout information pool
+   - Recommendation algorithm for workouts
+   - Questionnaire and calendar data collection to personalize workouts
+   - Workout example videos
+4. Account system
+   - Ability to create, personalize, and delete account
+   - Account info should have customizable visibility to other users (Users should decide what information that they want friends to be able to see)
+   - System to track progress of other users for friends and personal trainers
 
 ## 4. Non-Functional Requirements
 
-*Make a numbered list of non-functional requirements that are important for your software. Explain their importance. Follow the terminology of ISO/IEC 25010:2011. For each non-functional requirement, give an objective goal/measurement in order to provide verifiability for the requirement. You can find more details at the following URL:
-https://ieeexplore.ieee.org/document/8559686Links to an external site.*
-
-
-***Grading criteria (2 points): Follow the ISO-IEC terminology, explain why they are important, provide verifiability criteria for each requirement.***
-
 1. Portability
-    - Goal: Website is usable on both desktop AND mobile devices.
+
+   - Goal: Website is usable on both desktop AND mobile devices and all main features are availible to mobile devices.
 
 2. Usability
-    - Goal: Navigatable without external guidance.
+
+   - Goal: Navigatable without external guidance. Use should be intuitive and require minimal documentation.
 
 3. Availability
-    - Goal: Downtime of servers is kept to a minimum of 1 hour per week. 
+
+   - Goal: Downtime of servers is kept to a minimum of 1 hour per week.
 
 4. Securability
-    - Goal: Each users data can only be accessed by that user.
-
+   - Goal: Each users data can only be accessed by that user.
 
 ## 5. Minimum Viable Product
 
-Personal user accounts/login
-Calendar system for tracking consistency
-Goal progress tracker
-Workout recommendation system
-
+- Personal User Accounts/Login:
+  - Every user will have a unique username and password.
+  - A user can only sign in to their account if they provide the correct password.
+  - Testing and validation:
+    - Several accounts will be created with unique passwords.
+    - Provide the system with many incorrect strings for the password. The system must be confirmed the fail log-in.
+    - Provide the system with the correct string for the password. The system must be confirmed to pass log-in.
+- Calendar System for Tracking Consistency:
+  - Website must contain a live calender representing the current month and year correctly.
+  - Users should be able to view and edit their own personal plan using the calender.
+  - Visual representation for each workout as being in a completed, incompleted, or upcoming state.
+  - Testing and validation:
+    - Calender should provide accurate display of the month when given a specific date as an input.
+    - Verify correct state change for each workout by changing completion statuses and given dates for each goal. This data should be tracked for each user.
+    - Test that a given workout plan input is saved to an account's calender. Verify changes, additions, and deletions are saved for the account.
+- Goal Progress Tracker:
+  - User completion data should be saved over some time interval (daily, weekly, monthly, etc).
+  - Visually express completion data in some segment of the website. Provide the user with their current workout "streak", how often they complete or miss a workout, or some kind of completion data pertaining to consistency.
+  - Testing and validation:
+    - Verify that all completion data for an account from the calender section is accessible and readable.
+    - Test that multiple events (such as a completion or a failure to complete) are saved to a shared pool only under within the specified time window. Verify that the data does not reset before the time window has elapsed.
+- Workout Recommendation System:
+  - Create a system that will recommend a saved workout from a pool of workouts to a user based on their activity.
+  - Users will be able to add a "tag" to their workout to classify it.
+  - Website should be able to produce several recommended workouts from an accessible pool. Recommendations will be based on user completion data and tags in order to assure user-tailored accuracy and customer satisfaction.
+  - Testing and validation:
+    - Confirm that completion data is accessible.
+    - Test that a given workout pool is saved and updated based on changes made.
+    - Verify that the same pool is opened on different log-ins on the same account and on different accounts.
+    - Create user completion data ranging from moderate to extreme conditions. Verify that produced recommendations follow the predefined expectations.
 
 ## 6. Use Cases
 
-*Include a UML use case diagram for your project. There are many drawing tools that you can use.  I recommend the one we used in class, draw.io.*
+### **Use Case 1: User Registration and Login**
+- **Actor**: User
+- **Precondition**: User is not registered on the platform.
+- **Description**: The user creates a personal account by providing a unique username and password. After registration, the user logs in by entering their credentials.
+- **Flow of Events**:
+  1. The user navigates to the registration page.
+  2. The user enters personal details (username, password, email) and clicks "Submit."
+  3. The system validates the information and creates an account.
+  4. The user is redirected to the login page.
+  5. The user logs in using the username and password.
+  6. The system verifies the credentials and grants access.
+- **Postcondition**: The user is successfully logged into their account.
+- **Exceptions**:
+  - Invalid username/password: Display an error message and prompt for re-entry.
 
-***Grading criteria (5 points): Follow correctly the UML specification. The actors should be coherent with what was listed in sections 1 and 2. The use case diagram should be coherent with the list of requirements (section 3). The level of granularity of each use case should be adequate. The use cases should be adequately named.***
+### **Use Case 2: Workout Calendar and Planning**
+- **Actor**: User
+- **Precondition**: The user is logged into their account.
+- **Description**: The user can view, edit, and plan workouts on a calendar.
+- **Flow of Events**:
+  1. The user accesses the calendar page.
+  2. The system displays a calendar showing the current month and year.
+  3. The user selects a day to add a workout.
+  4. The user enters workout details and saves it.
+  5. The system updates the calendar to reflect the new workout.
+  6. The user can edit or delete workouts as needed.
+- **Postcondition**: The workout is successfully added, edited, or deleted from the calendar.
+- **Exceptions**:
+  - Invalid data: The system displays an error and prompts for corrections.
 
-*Present one complete use case description (textual) for each member of the group. Therefore, if the group has 4 members, 4 use case descriptions are necessary. As the grading will not be individual, the group is responsible for keeping the quality and consistency of the whole document – avoid just splitting the work. Choose the most important use cases to describe. Follow the template provided in the slides.*
+### **Use Case 3: Tracking Goal Progress**
+- **Actor**: User
+- **Precondition**: The user is logged into their account and has entered workout goals.
+- **Description**: The user can track their progress toward fitness goals.
+- **Flow of Events**:
+  1. The user navigates to the progress tracking page.
+  2. The system displays the user's current goal progress, including completion rates.
+  3. The user can view detailed progress data over a specific time interval.
+  4. The user can see visual representations such as streaks or performance graphs.
+  5. The system updates the progress data as workouts are completed.
+- **Postcondition**: The user’s goal progress is updated and displayed.
+- **Exceptions**:
+  - No data available: Display a message prompting the user to log their workout progress.
 
-*After each use case description, add a sketch of the corresponding user interface. This will be a good opportunity to start thinking about usability.*
+### **Use Case 4: Workout Recommendation System**
+- **Actor**: User
+- **Precondition**: The user is logged in and has a workout history.
+- **Description**: The system recommends workouts to the user based on their activity and progress.
+- **Flow of Events**:
+  1. The user accesses the workout recommendation page.
+  2. The system analyzes the user’s workout history and progress.
+  3. The system generates a list of recommended workouts.
+  4. The user selects a recommended workout.
+  5. The system provides details and instructions for the workout.
+- **Postcondition**: The user is presented with a recommended workout.
+- **Exceptions**:
+  - No workout history: The system suggests basic workouts for beginners.
 
-***Grading criteria (8 points): Follow the template to describe the use cases. Present an interface sketch for each use case. Describe the use case as a dialog between the user and the system. Do not use UI language in the description of the use case.***
+### **Use Case 5: User Profile and Privacy Settings**
+- **Actor**: User
+- **Precondition**: The user is logged in and has an existing profile.
+- **Description**: The user can view and adjust the visibility of their profile and fitness data.
+- **Flow of Events**:
+  1. The user accesses the profile settings page.
+  2. The system displays the user’s personal information and fitness data.
+  3. The user can adjust privacy settings to control who can view their profile and data.
+  4. The user saves any changes to their privacy settings.
+- **Postcondition**: The user’s privacy settings are updated.
+- **Exceptions**:
+  - Invalid data: The system prompts the user to re-enter valid information.
+![Use Case 5 Diagram](.Deliverable2Images/UseCase5_d2.png)
 
-![Use Case Diagram](image.png)
+### **Use Case 6: User Logout**
+- **Actor**: User
+- **Precondition**: The user is logged in.
+- **Description**: The user logs out of their account to end the session.
+- **Flow of Events**:
+  1. The user clicks the "Logout" button.
+  2. The system ends the session and redirects the user to the homepage.
+- **Postcondition**: The user is logged out and cannot access their account without logging in again.
+- **Exceptions**:
+  - Logout failure: The system displays an error message if logout fails.
+
+
+![Use Case Diagram](./Deliverable2Images/image.png)
 
 ## 7. User Stories
 
-*Write two user stories for each member of the group. They can be related to the same features described in the use cases or to different ones. Adopt the following format: "As a ROLE, I want SOMETHING so that GOAL."*
-
-*Establish a priority level for each user story and estimate how many hours each one will demand using the planning poker approach.*
-
-***Grading criteria (6 points): Use the provided format. The user stories should be in an adequate level of granularity (not too broad nor too specific). Provide the priority and estimation for each user story.***
-
 As a user, I would like the program to connect to send calendar notifications to my email address so I can be notified what my workouts should be for the week.
+
 - Priority: Low
 - Estimated Effort: 3
 
 As a user, I want to be able to upload workouts directly from my Apple watch so I don't have to manually input everything.
+
 - Priority: Low
 - Estimated Effort: 21
 
 As someone who has had trouble maintaining consistency at the gym in the past, I would like some way to track my performance of maintaining my goal.
+
 - Priority: Low
 - Estimated Effort: 1
 
 As a Beginner, I want to be able to find videos about the exercises I'm going to do, so that I can know how to do an exercise correctly.
+
 - Priority: Medium
 - Estimated Effort: 3
 
 As a newcomer, I want to be able to leave comments on my workouts before and after to track my progress.
-- Priority: Medium
-- Estimated effort: 1
 
-As a personal trainer, I want to manage multiple clients accounts so that I can monitor their progress
+- Priority: Medium
+- Estimated Effort: 1
+
+As a personal trainer, I want to manage multiple clients accounts so that I can monitor their progress.
+
 - Priority: Medium
 - Estimated Effort: 8
 
 As a beginner, I want to know if the workouts I'm doing are optimal for my growth (like a score).
+
 - Priority: Medium
 - Estimated Effort: 13
 
 As a user, I want to be able to share my achievements with friends on the website.
-- Priority: Low
-- Estimated effort: 5
 
-As a user, I want to be able to share my achievements with friends on the website
 - Priority: Low
-- Estimated effort: 3
+- Estimated Effort: 3
 
 As a user, I want to track my workout progress so that I can see improvements over time.
+
 - Priority: High
-- Estimated effort: 5
+- Estimated Effort: 5
 
 As a beginner, I want to know the best workouts to do for my growth.
+
 - Priority: High
-- Effort Required:8
+- Estimated Effort: 8
 
 As someone who doesn't have time to sit down for a long time to detail my workout, I want to be able to quickly record my workout without having to make many details so that I can be more consistent in my goal progress.
+
 - Priority: Medium
-- Effort Required: 2
+- Estimated Effort: 2
 
 As a person who works out at a gym, I want to be able to use the website on my phone so that I can update my data at the gym.
+
 - Priority: High
-- Effort Required: 21
+- Estimated Effort: 21
 
 ## 8. Issue Tracker
 
-*The user stories should be registered in your GitHub issue tracker. Include here the link for your issue tracker and a screenshot of what you did.*
+https://github.com/McKayHartman/Fitness-Website/issues
 
-***Grading criteria (1 point): Provide the URL and screenshot of the issue tracker. The user stories should be registered there.***
+![Screenshot (2)](./Deliverable2Images/issueTrackerDeliverable2.png)
