@@ -53,24 +53,6 @@ Approved by: Lacy Hamilton <br>
 Print screen: ![loginUX](./Images/login.png) <br>
 
 
-List in this section, the requirements and associated pull request that you implemented for this release, following the example below---include the description of the requirement, a link to the issue, a link to the pull request(s) that implement the requirement, who implemented the requirement, who approved it, and a print screen that depicts the implemented feature (if applicable). I expect that you implement the features you specified in your MVP (c.f. D.2 Requirements). 
-
-Order the requirements below by the name of the student who implemented them. All the members of the group should have worked on implementation activities and submitted pull requests. Only stable code should be included in the release. The code that is still under development should be in branches.
-
-Example:
-
-Requirement: As a Student, I want to add a homework assignment so that I can organize my ToDo list.  
-Issue: <link to your GitHub issue>  
-Pull request: https://github.com/user/project/pull/426  
-Implemented by: Martin Fowler  
-Approved by: Ada Lovelace  
-Print screen: A print screen that depicts the implemented feature (if applicable)
-
-All source code should be submitted by means of pull requests and the quality assurance person in the team should review and approve each pull request. For more information about pull requests:  
-[https://help.github.com/articles/about-pull-requests/Links to an external site.](https://help.github.com/articles/about-pull-requests/)
-
-_Grading criteria (8 points):_ This section will be evaluated in terms of correctness, completeness, thoroughness, consistency, coherence, adequate use of language, and amount of work put into the implementation. Students can receive different grades depending on their involvement. It is expected that all members contribute with non-trivial implementation. All pull requests should be approved and integrated by the quality assurance person. You should follow an adequate workflow (description of the requirement on the issue tracker, submission of the implemented requirement as a pull request, and review of the pull request by another developer). 
-
 # Tests
 
 We used the Vitest framework for testing the project. For HTTP testing, we also used the Supertest library in order to simulate HTTP requests. The unit tests are stored in the [backend/test](https://github.com/McKayHartman/Fitness-Website/tree/main/backend/test)  folder. 
