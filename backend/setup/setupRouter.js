@@ -1,11 +1,13 @@
 import express from 'express';
 import { Router } from 'express';
 import loginRoutes from './loginRoutes.js';
+import siteRoutes from './siteRoutes.js'
 
-const router = Router();
+const apiRouter = Router();
 
-router.use('/auth', loginRoutes);
+apiRouter.use('/auth', loginRoutes);
 
 export default function(app) {
-    app.use('/api', router);
+    app.use('/api', apiRouter);
+    app.use('/', siteRoutes);
 }
