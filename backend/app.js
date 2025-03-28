@@ -11,4 +11,6 @@ app.listen(PORT, () => {
     fetch("http://localhost:3000/api/auth/something")
        .then((value) => value.json()
        .then(thing => console.log(thing)));
+    fetch("http://localhost:3000/")
+       .then((value) => console.log(value));
 })
