@@ -5,7 +5,6 @@ import Header from "./Header.jsx";
 function Homepage() {
     return (
         <>
-            <Header />
             <div className="homepageContainer">
                 <header>
                     <p>Welcome to our website.</p>

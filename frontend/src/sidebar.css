@@ -1,0 +1,35 @@
+.sidebar {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    height: 100%;
+    background-color: black;
+    overflow: auto;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    flex:auto;
+    flex-direction: column;
+}
+
+a {
+    display: block;
+    background-color: white;
+    gap: 4px;
+}
+
+button {
+    display: block;
+}
+
+.sidebar.active {
+    transform: translateX(0);
+}
+
+.sidebar-close-button {
+    text-align: right;
+    margin: 10px;
+}
