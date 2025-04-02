@@ -1,7 +1,8 @@
 import dots from "./assets/SidebarDots.svg";
 import "./header.css";
-
-function HeaderWords() {
+import Sidebar from "./sidebar";
+import React, { useState } from "react";
+function HeaderWords({ setSidebarOpen }) {
     return (
         <div className="container header">
             <div className="headerleft">
@@ -10,6 +11,10 @@ function HeaderWords() {
                     src={dots}
                     alt="dots"
                     draggable="false"
+                    onClick={() => {
+                        console.log("opening");
+                        setSidebarOpen(true);
+                    }}
                 ></img>
                 <h1>CurPage</h1>
             </div>
@@ -21,10 +26,17 @@ function HeaderWords() {
 }
 
 function Header() {
+    const [sidebarOpen, setSidebarOpen] = useState(false);
     return (
-        <div className="headercontainer">
-            <HeaderWords />
-        </div>
+        <>
+            <Sidebar
+                sidebarOpen={sidebarOpen}
+                setSidebarOpen={setSidebarOpen}
+            />
+            <div className="headercontainer">
+                <HeaderWords setSidebarOpen={setSidebarOpen} />
+            </div>
+        </>
     );
 }
 

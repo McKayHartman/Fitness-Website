@@ -7,6 +7,7 @@ import Login from "./login.jsx";
 import CreateAccountPage from "./createAccountPage.jsx";
 import About from "./About.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Header from "./Header.jsx";
 
 createRoot(document.getElementById("root")).render(
     <StrictMode>
