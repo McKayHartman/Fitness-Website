@@ -1,6 +1,6 @@
 import "./sidebar.css";
 import React, { useState } from "react";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 export default function Sidebar({sidebarOpen, setSidebarOpen}) {
     return (
         <div className={`sidebar ${sidebarOpen ? "active" : ""}`}>
@@ -11,8 +11,8 @@ export default function Sidebar({sidebarOpen, setSidebarOpen}) {
                     console.log("click!");
                 }}
             />
-            <a href="/">Home</a>
-            <a href="/about">About</a>
+            <Link to="/">Home</Link>
+            <Link to="/about">About</Link>
         </div>
     );
 }
