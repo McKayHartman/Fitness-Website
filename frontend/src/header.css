@@ -1,5 +1,4 @@
 .headercontainer {
-  position: fixed;
   width: 105%;
   background: #414154;
   height: var(--header-height);
