@@ -12,6 +12,7 @@ export default function Sidebar({sidebarOpen, setSidebarOpen}) {
                 }}
             />
             <Link to="/">Home</Link>
+            <Link to="/diary">Diary</Link>
             <Link to="/about">About</Link>
             <Link to="/login">Log in</Link>
             <Link to="/register">Sign up</Link>

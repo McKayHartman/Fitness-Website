@@ -6,6 +6,7 @@ import Homepage from "./Homepage.jsx";
 import Login from "./login.jsx";
 import CreateAccountPage from "./createAccountPage.jsx";
 import About from "./About.jsx";
+import Diary from "./Diary.jsx"
 import { BrowserRouter, Routes, Route, createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import Header from "./Header.jsx";
 
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
             {
                 path: "/about",
                 element: <About />
+            },
+            {
+                path: "/diary",
+                element: <Diary />
             }
         ]
     }
