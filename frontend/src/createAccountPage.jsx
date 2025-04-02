@@ -3,7 +3,6 @@ import Header from "./Header";
 export default function CreateAccountPage() {
     return (
         <>
-            <Header />
             <div className="container">
                 <TextField />
             </div>

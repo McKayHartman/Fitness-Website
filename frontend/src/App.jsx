@@ -13,7 +13,6 @@ import Login from "./login.jsx";
 function App() {
     return (
         <>
-            <Header />
             <Login />
         </>
     );

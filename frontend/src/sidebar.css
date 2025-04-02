@@ -17,6 +17,8 @@
 
 a {
     display: block;
+    background-color: white;
+    gap: 4px;
 }
 
 button {

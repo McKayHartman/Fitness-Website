@@ -4,7 +4,6 @@ import Header from "./Header";
 function Login() {
     return (
         <>
-            <Header />
             <div class="login-container">
                 <form>
                     <h1>Log In</h1>
