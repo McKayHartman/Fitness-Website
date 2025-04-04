@@ -18,11 +18,7 @@ _Grading criteria (5 points):_ Adequate use of UML; Adequate design of an archi
 
 ### Class Diagrams
 
-Present a refined class diagram of your system, including implementation details such as visibilities, attributes to represent associations, attribute types, return types, parameters, etc. The class diagram should match the code you have produced so far, but not be limited to it (e.g., it can contain classes not implemented yet). 
-
-The difference between this class diagram and the one that you presented in D3 is that the last focuses on the conceptual model of the domain while the former reflects the implementation. Therefore, the implementation details are relevant in this case. 
-
-_Grading criteria (6 points):_ Adequate use of UML; Adequate choice of classes and relationships; Completeness of the diagram; Adequate presentation of implementation details. 
+![ClassDiagram](./Images/UMLClasses.drawio.png)
 
 ### Sequence Diagrams
 
