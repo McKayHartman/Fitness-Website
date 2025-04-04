@@ -5,7 +5,6 @@
       "muscleGroup": "Chest",
       "description": "A basic upper body exercise that targets the chest, shoulders, and triceps.",
       "difficulty": "Beginner",
-      "duration": 30,
       "videoUrl": "https://example.com/pushup-demo"
     },
     {
@@ -14,7 +13,6 @@
       "muscleGroup": "Legs",
       "description": "A fundamental lower body exercise that strengthens the quadriceps, hamstrings, and glutes.",
       "difficulty": "Beginner",
-      "duration": 45,
       "videoUrl": "https://example.com/squat-demo"
     },
     {
@@ -23,7 +21,6 @@
       "muscleGroup": "Legs",
       "description": "An effective exercise for building lower body strength and balance.",
       "difficulty": "Beginner",
-      "duration": 40,
       "videoUrl": "https://example.com/lunge-demo"
     },
     {
@@ -32,7 +29,6 @@
       "muscleGroup": "Core",
       "description": "A core-strengthening exercise that improves stability and posture.",
       "difficulty": "Intermediate",
-      "duration": 60,
       "videoUrl": "https://example.com/plank-demo"
     },
     {
@@ -41,7 +37,6 @@
       "muscleGroup": "Full Body",
       "description": "A high-intensity exercise that works multiple muscle groups and boosts cardiovascular fitness.",
       "difficulty": "Intermediate",
-      "duration": 30,
       "videoUrl": "https://example.com/burpee-demo"
     },
     {
@@ -50,7 +45,6 @@
       "muscleGroup": "Chest",
       "description": "A compound exercise that targets the chest, shoulders, and triceps for upper body strength.",
       "difficulty": "Intermediate",
-      "duration": 45,
       "videoUrl": "https://example.com/benchpress-demo"
     },
     {
@@ -59,7 +53,6 @@
       "muscleGroup": "Back",
       "description": "A compound movement that strengthens the back, glutes, and legs, promoting overall strength.",
       "difficulty": "Advanced",
-      "duration": 50,
       "videoUrl": "https://example.com/deadlift-demo"
     },
     {
@@ -68,7 +61,6 @@
       "muscleGroup": "Shoulders",
       "description": "An effective exercise for building shoulder strength and stability.",
       "difficulty": "Intermediate",
-      "duration": 40,
       "videoUrl": "https://example.com/overheadpress-demo"
     },
     {
@@ -77,7 +69,6 @@
       "muscleGroup": "Arms",
       "description": "A basic exercise focused on developing the biceps.",
       "difficulty": "Beginner",
-      "duration": 30,
       "videoUrl": "https://example.com/bicepcurl-demo"
     },
     {
@@ -86,7 +77,6 @@
       "muscleGroup": "Arms",
       "description": "An exercise targeting the triceps to improve arm strength.",
       "difficulty": "Beginner",
-      "duration": 30,
       "videoUrl": "https://example.com/tricepextension-demo"
     }
   ]
