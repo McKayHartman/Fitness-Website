@@ -54,3 +54,9 @@ _Grading criteria (6 points, 3 points for each pattern):_ Correct use of the de
 How does your design observe the SOLID principles? Provide a short description of followed principles giving three concrete examples from your classes. 
 
 _Grading criteria (6 points, 2 points per SOLID example):_ Show correct understanding of SOLID principles; Provide enough details to justify how the principles were observed.
+
+1. **Open-Closed Principle** -- The open-closed principle specifies that software should enable programmers to make additions without having to change the existing code. Our website uses the open-closed principle through its utilization of React JS. React allows us, as programmers to reuse components. For example, if we need to add a button to a webpage, we don't have to write a whole new button, we can just reuse the one we have. This extends the software while minimizing restructuring of existing code.
+
+2.
+
+3.
