@@ -5,7 +5,6 @@ import { useState } from "react";
 export default function CreateAccountPage() {
     return (
         <>
-            <Header />
             <div className="container">
                 <TextField />
             </div>

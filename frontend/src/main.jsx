@@ -6,17 +6,45 @@ import Homepage from "./Homepage.jsx";
 import Login from "./login.jsx";
 import CreateAccountPage from "./createAccountPage.jsx";
 import About from "./About.jsx";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
+import Header from "./Header.jsx";
+
+function HeaderWrapper(){
+    return(
+        <>
+            <Header />
+            <Outlet />
+        </>
+    )
+}
+
+const router = createBrowserRouter([
+    {
+        path: "/",
+        element: <HeaderWrapper />,
+        children:[
+            {
+                path: "/",
+                element: <Homepage />
+            },
+            {
+                path: "/login",
+                element: <Login />
+            },
+            {
+                path: "/register",
+                element: <CreateAccountPage />
+            },
+            {
+                path: "/about",
+                element: <About />
+            }
+        ]
+    }
+])
 
 createRoot(document.getElementById("root")).render(
     <StrictMode>
-        <BrowserRouter>
-            <Routes>
-                <Route index element={<Homepage />} />
-                <Route path="login" element={<Login />} />
-                <Route path="register" element={<CreateAccountPage />} />
-                <Route path="about" element={<About />} />
-            </Routes>
-        </BrowserRouter>
+        <RouterProvider router={router} />
     </StrictMode>,
 );
