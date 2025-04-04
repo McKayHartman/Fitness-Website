@@ -26,9 +26,7 @@ _Grading criteria (6 points):_ Adequate use of UML; Adequate choice of classes 
 
 ### Sequence Diagrams
 
-Present a [sequence diagram](http://agilemodeling.com/artifacts/sequenceDiagram.htm) that represents how the objects in your system interact for a specific use case. Also include the use case's description in this section. The sequence diagram should be consistent with the class diagram and architecture. 
-
-_Grading criteria (5 points):_ Adequate use of UML; Adequate design of the sequence diagram; Consistency with the class diagram; Consistency with the use case description; Not including the use case description; Over simplistic diagram.
+![sequence diagram](./Images/SeqDiagram.png)
 
 ### Design Patterns
 
