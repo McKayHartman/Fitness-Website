@@ -8,9 +8,19 @@ export const usersTable = sqliteTable('users', {
   lastName: text('lastName'),
 });
 
-export const userWorkoutTable = sqliteTable('user_workout', {
-  workoutID: integer('workoutID').primaryKey(), // Removed .autoincrement()
+export const workoutTable = sqliteTable('workouts', {
+  workoutID: integer('workoutID').primaryKey().autoIncrement(),
   userId: integer('userId').notNull().references(() => usersTable.id),
   workoutDate: text('workoutDate').notNull(),
-  workoutType: text('workoutType').notNull(),
 });
+
+export const exerciseTable = sqliteTable('exercises', {
+  exerciseID: integer('exerciseID').primaryKey().autoIncrement(),
+  workoutID: integer('workoutID').notNull().references(() => usersTable.id),
+  exerciseType: integer('exerciseType').notNull(), // this refers to the id in exercises.json
+  difficulty: integer('difficulty').notNull(),
+  reps: integer('reps'),
+  weight: integer('weight'),
+  duration: integer('duration'),
+  notes: text('notes'),
+})
