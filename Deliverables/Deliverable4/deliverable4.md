@@ -1,8 +1,10 @@
+For this deliverable, you should have a fully functional piece of software that delivers a set of features (don’t need to be the complete set, but it needs to be a working prototype). Structure your deliverable according to the following sections.
+
 # Introduction
 
-This project currently consists of an assortment of individual pages aimed to adhere to our predetermined goals as previously stated in our value statement, whcih goes as follow: We help fitness newcomers build confidence and independence by offering an online learning platform that teaches newcomers the best way to begin and supports them into becoming consistent. To accomplish this, an *About* page was created to inform any users of this project's value. The system also contains a *Create Account* and a *Login* page, creating fields for users to input their information when they wish to create an account or log back in to their account. <br>
-Follow [this link](https://github.com/McKayHartman/Fitness-Website) to view the current state of this project.
+Provide a short paragraph that describes your system. This paragraph should contain the value proposition and a description of the main features of the software. At the end of the introduction, include a link to your project on GitHub.
 
+_Grading criteria (1 point):_ This section will be evaluated in terms of correctness, completeness, thoroughness, consistency, coherence, and adequate use of language. The description should be consistent with the current state of the project. You should include the link to GitHub.
 
 # Requirements
 
@@ -11,47 +13,65 @@ Issue: https://github.com/McKayHartman/Fitness-Website/issues/65 <br>
 Pull request: https://github.com/McKayHartman/Fitness-Website/pull/77 <br>
 Implemented by: Bryce Panza <br>
 Approved by: Lacy Hamilton <br>
-Print screen: ![createAccountUX](./Images/createaccount.png) <br>
+Print screen: A print screen that depicts the implemented feature (if applicable) <br>
 
 
-Requirement: As a new user, I would like to gather information about the site and its purpose. <br>
-Issue: https://github.com/McKayHartman/Fitness-Website/issues/103 <br>
-Pull request: https://github.com/McKayHartman/Fitness-Website/pull/87 <br>
+Requirement: <br>
+Issue: <link to your GitHub issue> <br>
+Pull request: <br>
 Implemented by: Christian Lamb <br>
 Approved by: Lacy Hamilton <br>
-Print screen: ![aboutUX](./Images/about.png) <br>
+Print screen: A print screen that depicts the implemented feature (if applicable) <br>
 
 
-Requirement: As a web user, I would like to be able to be directed to the homepage when visiting site. <br>
-Issue: [#71](https://github.com/McKayHartman/Fitness-Website/issues/71) <br>
-Pull request: [#72](https://github.com/McKayHartman/Fitness-Website/pull/72) <br>
+Requirement: As a web user, I would like to be able to be directed to the homepage. <br>
+Issue: [Link](https://github.com/McKayHartman/Fitness-Website/issues/71) <br>
+Pull request: [Link](https://github.com/McKayHartman/Fitness-Website/pull/72) <br>
 Implemented by: Lacy Hamilton <br>
 Approved by: McKay Hartman <br>
-Print screen: ![homepageUX](./Images/homepage.png) <br>
+Print screen: A print screen that depicts the implemented feature (if applicable) <br>
 
 
-Requirement: As a web user I would like to be able to navigiate through the website and see what page I am on<br>
-Issue: [#100](https://github.com/McKayHartman/Fitness-Website/issues/100) <br>
-Pull request: [#59](https://github.com/McKayHartman/Fitness-Website/pull/59)<br>
+Requirement: <br>
+Issue: <link to your GitHub issue> <br>
+Pull request: <br>
 Implemented by: Logan Hunt <br>
 Approved by: Lacy Hamilton <br>
-Print screen: ![headerUX](./Images/headerUX.png) <br>
+Print screen: A print screen that depicts the implemented feature (if applicable) <br>
 
 
-Requirement: As a web user, I would like to be able to navigate through different pages.<br>
-Issue: [#88](https://github.com/McKayHartman/Fitness-Website/issues/88) <link to your GitHub issue> <br>
-Pull request: [#78](https://github.com/McKayHartman/Fitness-Website/pull/78) <br>
+Requirement: <br>
+Issue: <link to your GitHub issue> <br>
+Pull request: <br>
 Implemented by: Marco de la Rosa <br>
 Approved by: Lacy Hamilton <br>
-
+Print screen: A print screen that depicts the implemented feature (if applicable) <br>
 
 Requirement: As a frequent web user I would like to be able to log in to my account to access my personal settings and data. <br>
-Issue: [#70](https://github.com/McKayHartman/Fitness-Website/issues/70) <br>
-Pull request: [#74](https://github.com/McKayHartman/Fitness-Website/pull/74) <br>
+Issue:[Link] (https://github.com/McKayHartman/Fitness-Website/issues/70) <br>
+Pull request: [Link](https://github.com/McKayHartman/Fitness-Website/pull/74)<br>
 Implemented by: McKay Hartman <br>
 Approved by: Lacy Hamilton <br> 
-Print screen: ![loginUX](./Images/login.png) <br>
+Print screen: ![Log In Page](https://github.com/McKayHartman/Fitness-Website/tree/main/Deliverables/Deliverable4/Images/Login.png) <br>
 
+
+List in this section, the requirements and associated pull request that you implemented for this release, following the example below---include the description of the requirement, a link to the issue, a link to the pull request(s) that implement the requirement, who implemented the requirement, who approved it, and a print screen that depicts the implemented feature (if applicable). I expect that you implement the features you specified in your MVP (c.f. D.2 Requirements). 
+
+Order the requirements below by the name of the student who implemented them. All the members of the group should have worked on implementation activities and submitted pull requests. Only stable code should be included in the release. The code that is still under development should be in branches.
+
+Example:
+
+Requirement: As a Student, I want to add a homework assignment so that I can organize my ToDo list.  
+Issue: <link to your GitHub issue>  
+Pull request: https://github.com/user/project/pull/426  
+Implemented by: Martin Fowler  
+Approved by: Ada Lovelace  
+Print screen: A print screen that depicts the implemented feature (if applicable)
+
+All source code should be submitted by means of pull requests and the quality assurance person in the team should review and approve each pull request. For more information about pull requests:  
+[https://help.github.com/articles/about-pull-requests/Links to an external site.](https://help.github.com/articles/about-pull-requests/)
+
+_Grading criteria (8 points):_ This section will be evaluated in terms of correctness, completeness, thoroughness, consistency, coherence, adequate use of language, and amount of work put into the implementation. Students can receive different grades depending on their involvement. It is expected that all members contribute with non-trivial implementation. All pull requests should be approved and integrated by the quality assurance person. You should follow an adequate workflow (description of the requirement on the issue tracker, submission of the implemented requirement as a pull request, and review of the pull request by another developer). 
 
 # Tests
 
@@ -67,8 +87,9 @@ test('sameHash', async () => {
 
 Here are the results of the tests being run.
 ![Successful test cases](./images/test-cases.jpg)
-
 # Technology
+
+List the adopted technologies with a brief description and justification for choosing them.
 
 The list of adopted technologies our project utilizes is the following:
 
@@ -80,9 +101,20 @@ The list of adopted technologies our project utilizes is the following:
 - Figma: We used Figma to finalize the website design for our UX Design as we wanted to be able to make a mockup of what we wanted our site to look like. <br>
 - Azure: We are using Microsoft Azure to host our website as many of us have experience using this platform from previous coursework. <br>
 
+Grading criteria (1 point): This section will be evaluated in terms of correctness, completeness, thoroughness, consistency, coherence, and adequate use of language.
+
 # Deployment
 
-https://fitnesswebsite.z13.web.core.windows.net/
+Provide a link for the system in production and describe how you are deploying your system. 
+
+Some alternatives for deploying your system in the cloud:
+
+- AWS. AWS Educate offers free credits for students. See the tutorial at https://docker-curriculum.com/ on how to create a container and deploy it on AWS. ]
+- Digital Ocean or Azzure. As part of the GitHub Education benefits, as a student, you can get $100 at Digital Ocean and $100 at Microsoft Azzure cloud computing platforms (see more details at [https://education.github.com/students)Links to an external site.](https://education.github.com/students\)).
+- Oracle Cloud. Oracle offers a free tier in its cloud environment that should be more than enough for your needs.
+- Firebase. Firebase can be a good choice if you are building a mobile phone app.
+
+_Grading criteria (3 points):_ This section will be graded based on the adequate use of the technology and its adequate description.
 
 # Licensing
 
@@ -90,25 +122,30 @@ We adopted a MIT License as we just wanted to have a simple license. The MIT Lic
 
 # Readme File
 
-[CONTRIBUTING.md](https://github.com/McKayHartman/Fitness-Website/blob/main/README.md) <br>
-[LICENSE](https://github.com/McKayHartman/Fitness-Website/blob/main/LICENSE) <br>
-[CODE_OF_CONDUCT.md](https://github.com/McKayHartman/Fitness-Website/blob/main/CODE_OF_CONDUCT.md) <br>
+CONTRIBUTING.md:
+LICENSE:
+CODE_OF_CONDUCT:
+
+You should also prepare your repository for receiving new contributors. You should prepare a Readme.md file. See an example at https://gist.github.com/PurpleBooth/109311bb0361f32d87a2   In the Readme file, the current version should be stated. You should follow the Semantic Versioning schema (https://semver.org/). Tag the GitHub repository accordingly (https://git-scm.com/book/en/v2/Git-Basics-Tagging). 
+
+Your repository should contain a CONTRIBUTING.md file, a LICENSE file, and a CODE_OF_CONDUCT.md file. Search online for some examples of these files. In this section of the deliverable, put links to these files on GitHub.
+
+_Grading criteria (3 points):_ This section will be based on the presence and quality of the information presented in the files.
 
 # UX Design
-For our user interface, we planned out basic design using tools like Figma. The UX should be intuitive and simplistic to streamline the process of creating accounts and accessing features. Much of the design is tied to inherited variables so that we can change things like colors globally if we choose to do so.
 
-![loginUX](./Images/loginUX.png)
-![registerUX](./Images/registerUX.png)
-![headerUX](./Images/headerUX.png)
+Describe the approach you adopted to design your user interface. Include some screenshots.
+
+_Grading criteria (3 points):_ This section will be graded based on the appearance (aesthetics) and usability (ease of use) of the system.
 
 # Lessons Learned
 
-In retrospect, the team has significantly improved their skills, especially in using React JS and GitHub. We started out disorganized, not utilizing features that would streamline the process.
+In retrospective, describe what your team learned during this first release and what you are planning to change for the second release. 
 
-We added protections to the main branch, so that pull requests would have to be reviewed before merging. This caused us to look at each others code more than we were and catch mistakes.
-
-The team has also improved their workflow by better assigning tasks appropriate to each memeber's specific skill set. Specialization helps the team more quickly move through the development process because issues are delegated to people who know how to handle them.
+_Grading criteria (2 points):_ Adequate reflection about problems and solutions, clear description with adequate use of language. 
 
 # Demo
 
-[Youtube Video](https://youtu.be/Zol3ltbpPQY)
+Include a link to a video showing the system working.
+
+_Grading criteria (5 points):_ This section will be graded based on the quality of the video and on the evidence that the features are running as expected. Additional criteria are the relevance of the demonstrated functionalities, the correctness of the functionalities, and the quality of the developed system from the external point of view (user interface).
