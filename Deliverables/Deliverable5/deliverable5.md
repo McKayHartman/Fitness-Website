@@ -57,6 +57,6 @@ _Grading criteria (6 points, 2 points per SOLID example):_ Show correct underst
 
 1. **Open-Closed Principle** -- The open-closed principle specifies that software should enable programmers to make additions without having to change the existing code. Our website uses the open-closed principle through its utilization of React JS. React allows us, as programmers to reuse components. For example, if we need to add a button to a webpage, we don't have to write a whole new button, we can just reuse the one we have. This extends the software while minimizing restructuring of existing code.
 
-2.
+2. **Single Responsibility Principle** -- The single responsibility principle states that each class should have one responsibility. There should not be any "monolithic" classes that encompass multiple responsiblilties that could otherwise be divided into multiple classes. Our fitness website follows this principle because it divides responsibility of classes to one per. For example, there is a seperate workout class and excercise class. This allows for the division of the responsibility of storing the workout date, duration, and status into the  workout class; the excercise class is then free to be responsible for the details of the of excercise, including type, weight, reps, etc.
 
 3.
