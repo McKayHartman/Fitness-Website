@@ -1,18 +1,16 @@
-import { date } from "drizzle-orm/mysql-core";
-import { int, sqliteTable, text } from "drizzle-orm/sqlite-core";
+import { sqliteTable, text, integer } from 'drizzle-orm/sqlite-core';
 
-export const usersTable = sqliteTable("users-table", {
-    id: int().primaryKey({ autoIncrement: true}),
-    passwordHash: text(),
-    email: text().notNull().unique(),
-    firstName: text().notNull(),
-    lastName: text().notNull(),
+export const usersTable = sqliteTable('users', {  
+  id: integer('id').primaryKey(),
+  email: text('email').notNull(),
+  password: text('password').notNull(),
+  firstName: text('firstName'),
+  lastName: text('lastName'),
 });
 
-// each user needs their own workout table to store previous workouts
-export const userWorkoutTable = sqliteTable("user-workout-table", {
-    workoutID: int().primaryKey({autoIncrement: true}),
-    workoutDate: date().notNull(),
-    workoutType: text().notNull(),
-    // There needs to be a foreign key here belonging to the user who owns this table
-})
+export const userWorkoutTable = sqliteTable('user_workout', {
+  workoutID: integer('workoutID').primaryKey(), // Removed .autoincrement()
+  userId: integer('userId').notNull().references(() => usersTable.id),
+  workoutDate: text('workoutDate').notNull(),
+  workoutType: text('workoutType').notNull(),
+});
