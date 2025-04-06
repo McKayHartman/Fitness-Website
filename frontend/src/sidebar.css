@@ -1,8 +1,10 @@
 .sidebar {
     position: fixed;
+    display: flex;
     z-index: 10;
     top: 0;
     left: 0;
+    gap: 5px;
     margin: 0;
     padding: 0;
     width: 25%;
@@ -11,18 +13,34 @@
     overflow: auto;
     transform: translateX(-100%);
     transition: transform 0.3s ease-in-out;
-    flex:auto;
+    flex: auto;
     flex-direction: column;
+    background-color: #3a3b3d;
 }
 
-a {
-    display: block;
-    background-color: white;
-    gap: 4px;
+.sidebar-a {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    border-radius: 10px;
+    transition: background-color 0.2s;
 }
 
-button {
-    display: block;
+.sidebar-a:hover {
+    background-color: #636569;
+}
+
+.sidebar-a p {
+    margin: 0;
+    padding: 0;
+    padding-left: 5%;
+    font-weight: 600;
+    font-size: 1.4em;
 }
 
 .sidebar.active {
@@ -30,6 +48,29 @@ button {
 }
 
 .sidebar-close-button {
-    text-align: right;
-    margin: 10px;
+    padding: 0;
+    margin: 15px;
+    align-self: last baseline;
+    width: 40px;
+    height: 40px;
+    border-radius: 15%;
+    background-color: #9c0202;
+    transition: background-color 0.3s;
 }
+
+.sidebar-close-button:hover {
+    background-color: #fa0000;
+}
+.sidebar-item-text {
+    margin: 0;
+    padding: 0;
+    width: 80%;
+}
+
+.sidebar-icon-button {
+    margin-left: 5%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
