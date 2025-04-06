@@ -26,7 +26,19 @@ _Grading criteria (6 points):_ Adequate use of UML; Adequate choice of classes 
 
 ### Sequence Diagrams
 
-![sequence diagram](./Images/SeqDiagram.png)
+### **Use Case: Workout Logging**
+
+- **Actor**: User
+- **Precondition**: The user is logged into their account.
+- **Description**: The user can log workouts.
+- **Flow of Events**:
+  1. The user accesses the diary page.
+  2. The user enters workout details and saves it.
+  3. The system updates the diary to reflect the new workout.
+  4. The user's goals are then updated to show the completed progress.
+- **Postcondition**: The workout is successfully added to the calendar.
+
+![sequence diagram](./Images/SeqDiagram2.png)
 
 ### Design Patterns
 
