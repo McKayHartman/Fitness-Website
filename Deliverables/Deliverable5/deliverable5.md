@@ -7,6 +7,7 @@ Our system includes an accounts module ensuring that only authorized users can a
 ### Architecture
 
 ![Architecture](./Images/PackageDiagram.png)
+This architecture follows a very linear progression for simplicity and ease-of-use. All interactions start with the user triggering some event in the front-end. This interaction must be handled by the server and apply the correct domain logic, representing the desired functionality and rules for thsi website, and then it may interact with the database to retrieve and update information.
 
 ### Class Diagrams
 
