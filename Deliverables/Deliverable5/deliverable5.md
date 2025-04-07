@@ -33,7 +33,8 @@ This architecture follows a very linear progression for simplicity and ease-of-u
 ### Design Patterns
 **Facade Pattern**
 ![Facade Design Pattern](./Images/UMLFacadeClass.png)
-https://github.com/McKayHartman/Fitness-Website/blob/bryce-addFacade/frontend/src/UserUI.jsx
+https://github.com/McKayHartman/Fitness-Website/blob/bryce-addFacade/frontend/src/UserUI.jsx 
+
 **State Pattern**
 ![State Diagram Pattern](./Images/State_Diagram.png)
 https://github.com/McKayHartman/Fitness-Website/blob/main/frontend/src/Header.jsx
