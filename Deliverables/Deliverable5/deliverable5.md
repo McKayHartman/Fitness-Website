@@ -6,17 +6,7 @@ Our system includes an accounts module ensuring that only authorized users can a
 
 ### Architecture
 
-Present a diagram of the high-level [architecture](https://en.wikipedia.org/wiki/List_of_software_architecture_styles_and_patterns) of your system. Use a UML package diagram to describe the main modules and how they interrelate. See some examples at:
-
-[https://www.uml-diagrams.org/package-diagrams-examples.html Links to an external site.](https://www.uml-diagrams.org/package-diagrams-examples.html)
-
-Make clear the layers of your architecture (if they exist) as described in:
-
-[https://www.uml-diagrams.org/multi-layered-application-uml-model-diagram-example.html Links to an external site.](https://www.uml-diagrams.org/multi-layered-application-uml-model-diagram-example.html)
-
-[Links to an external site.](https://www.uml-diagrams.org/multi-layered-application-uml-model-diagram-example.html)Provide a brief rationale of your architecture explaining why you designed it that way. 
-
-_Grading criteria (5 points):_ Adequate use of UML; Adequate design of an architecture for the system; Adequate description of the rationale.
+![Architecture](./Images/PackageDiagram.png)
 
 ### Class Diagrams
 
