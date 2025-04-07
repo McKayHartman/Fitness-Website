@@ -20,7 +20,7 @@ _Grading criteria (5 points):_ Adequate use of UML; Adequate design of an archi
 
 ### Class Diagrams
 
-![ClassDiagram](./Images/UMLClasses.drawio.png)
+![ClassDiagram](./Images/UMLClasses.png)
 
 ### Sequence Diagrams
 
