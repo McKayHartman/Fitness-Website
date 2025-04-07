@@ -34,8 +34,9 @@ This architecture follows a very linear progression for simplicity and ease-of-u
 **Facade Pattern**
 ![Facade Design Pattern](./Images/UMLFacadeClass.png)
 https://github.com/McKayHartman/Fitness-Website/blob/bryce-addFacade/frontend/src/UserUI.jsx
-
-
+**State Pattern**
+![State Diagram Pattern](./Images/State_Diagram.png)
+https://github.com/McKayHartman/Fitness-Website/blob/main/frontend/src/Header.jsx
 ### Design Principles
 
 1.	**Open-Closed Principle** - The open-closed principle specifies that software should enable programmers to make additions without having to change the existing code. Our website uses the open-closed principle through its utilization of React JS. React allows us, as programmers to reuse components. For example, if we want to add a new page, we are able to do this more efficiently as we can just reuse components from previous pages. This extends the software while minimizing restructuring of existing code. For a class example, the User class is able to inherit the classes of admin, personal trainer, or basic. This follows the principle because it means that the User class does not have to be modified, and it can just be extended to accommodate the other three types of account.
