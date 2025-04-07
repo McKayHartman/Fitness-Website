@@ -31,19 +31,10 @@ This architecture follows a very linear progression for simplicity and ease-of-u
 ![sequence diagram](./Images/SeqDiagram2.png)
 
 ### Design Patterns
+**Facade Pattern**
+![Facade Design Pattern](./Images/UMLFacadeClass.png)
+https://github.com/McKayHartman/Fitness-Website/blob/bryce-addFacade/frontend/src/UserUI.jsx
 
-Split this section into 2 subsections. For each subsection, present a UML class diagram showing the application of a [design pattern](https://sourcemaking.com/design_patterns) to your system (a different pattern for each section). Each class diagram should contain only the classes involved in the specific pattern (you don’t need to represent the whole system). Choose patterns from two different categories: Behavioral, Structural, and Creational. You are not limited to design patterns studied in class. 
-
-Your system may not be appropriate for any design pattern. In this case, for didactic purposes, be creative and extend a little bit the scope of your system to make the design patterns appropriate. 
-
-Implement each design pattern in your system and provide GitHub links to the corresponding classes. Example (the links are just illustrative):
-
-- Car: [https://github.com/user/repo/blob/master/src/com/proj/main/Car.java Links to an external site.](https://github.com/user/repo/blob/master/src/com/proj/main/Car.java)
-- IBreakBehavior: [https://github.com/user/repo/blob/master/src/com/proj/main/IBreakBehavior.javaLinks to an external site.](https://github.com/user/repo/blob/master/src/com/proj/main/IBreakBehavior.java)
-- BrakeWithABS: [https://github.com/user/repo/blob/master/src/com/proj/main/BrakeWithABS.javaLinks to an external site.](https://github.com/user/repo/blob/master/src/com/proj/main/BrakeWithABS.java)
-- Brake: [https://github.com/user/repo/blob/master/src/com/proj/main/Brake.javaLinks to an external site.](https://github.com/user/repo/blob/master/src/com/proj/main/Brake.java)
-
-_Grading criteria (6 points, 3 points for each pattern):_ Correct use of the design pattern as described in the literature; Adequate choice of the design pattern; Adequate implementation of the design pattern.
 
 ### Design Principles
 
