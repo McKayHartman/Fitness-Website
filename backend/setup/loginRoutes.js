@@ -5,18 +5,20 @@ import { drizzle } from 'drizzle-orm/libsql';
 import { eq } from 'drizzle-orm';
 import { usersTable } from '../db/schema.js';
 import { hash, sameHash } from '../hash.js';
+import jwt from 'jsonwebtoken';
+import { generateToken, authenticateToken } from './auth.js';
 const db = drizzle(process.env.DB_FILE_NAME);
 
 const loginRoutes = Router();
+
+
+// we need to santize our inputs. Someone do that later
 
 // test endpoint that returns all users
 loginRoutes.get("/something", async (req, res) => {
     res.json(await db.select().from(usersTable));
 });
 
-// test endpoint that returns a user given a username and password.
-// we should probably later use express-session for
-// returning info if a user is already logged in.
 loginRoutes.post("/login", async (req, res) => {
     // get the body's inputs
     const { password, email } = req.body;
@@ -28,7 +30,9 @@ loginRoutes.post("/login", async (req, res) => {
     // check password
     if (await sameHash(password, user.passwordHash))
     {
-        res.status(201).json({ message: 'Successfully logged in!'});
+        // generate a token
+        const token = generateToken(email);
+        res.status(201).json(token);
     }
     else
     {
