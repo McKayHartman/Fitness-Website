@@ -4,7 +4,7 @@ import express from "express";
 import { drizzle } from 'drizzle-orm/libsql';
 import { eq } from 'drizzle-orm';
 import { usersTable } from '../db/schema.js';
-import { hash, sameHash } from '../auth.js';
+import { hash, sameHash } from '../hash.js';
 const db = drizzle(process.env.DB_FILE_NAME);
 
 const loginRoutes = Router();
