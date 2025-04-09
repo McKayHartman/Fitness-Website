@@ -3,16 +3,17 @@ All contributors should make fostering an open-minded and welcoming community a 
 
 # Our Standards
 We encourage behavior that fosters a collaborative community. Such behavior includes:
--Respectful language.
--Open mindedness.
--Acceptance of constructive criticism and other ideas.
--Willingness to collaborate with others.
--Prioritizing community needs and values.
-Unacceptable behavior from contributors will not be tolerated. SUch behavior includes:
--Harsh or disrespectful language, as well as any speech that affects the livelihood and comfort of others.
--Harassment in any form.
--Dispersement of private information of any form from any contributor.
--Any behavior that may be deemed as unprofessional from this highly collaborative community.
+- Respectful language.
+- Open mindedness.
+- Acceptance of constructive criticism and other ideas.
+- Willingness to collaborate with others.
+- Prioritizing community needs and values. <br>
+
+Unacceptable behavior from contributors will not be tolerated. Such behavior includes:
+- Harsh or disrespectful language, as well as any speech that affects the livelihood and comfort of others.
+- Harassment in any form.
+- Dispersement of private information of any form from any contributor.
+- Any behavior that may be deemed as unprofessional from this highly collaborative community.
 
 # Our Responsibilities
 Any contributor is expected to adhere to the standards listed above for this project at all times. Furthermore, a contributor is expected to be vigilant and monitor contributions from other team members. If any contribution is in violation of the Project Standards, a team member is expected to diregard, edit, or even remove it, whether it is a commit, an issue, a comment, or some other form.

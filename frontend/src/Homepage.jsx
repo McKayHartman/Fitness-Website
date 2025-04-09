@@ -2,11 +2,9 @@ import "./homepage.css";
 import Header from "./Header.jsx";
 // import image from './assets/pexels-victorfreitas-841128.jpg';
 
-function Homepage(){
-
-    return(
+function Homepage() {
+    return (
         <>
-            <Header />
             <div className="homepageContainer">
                 <header>
                     <p>Welcome to our website.</p>
@@ -24,4 +22,4 @@ function Homepage(){
     );
 }
 
-export default Homepage
+export default Homepage;
