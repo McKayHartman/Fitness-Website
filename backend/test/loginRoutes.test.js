@@ -9,8 +9,9 @@ describe('Test auth api', async () => {
     test('register user', async() => {
         const testUser = { email: "registerTestuser@spottr.com", password: "test", 
             firstName: "first", lastName: "last"};
+        await request.delete('/api/auth/deleteUser').send(testUser);
         const res = await request.post('/api/auth/register').send(testUser);
-        await request.post('/api/auth/deleteUser').send(testUser);
+        await request.delete('/api/auth/deleteUser').send(testUser);
         expect(await res.statusCode).toBe(201);
     });
 
@@ -26,10 +27,12 @@ describe('Test auth api', async () => {
         
         const testUser = { email: "loginTestuser@spottr.com", password: "test", 
             firstName: "first", lastName: "last"};
+        console.log('1');
         await request.post('/api/auth/register').send(testUser);
+        console.log('2');
         const res = await request.post('/api/auth/login').send(testUser);
-
-        await request.post('/api/auth/deleteUser').send(testUser);
+        console.log('3');
+        await request.delete('/api/auth/deleteUser').send(testUser);
         expect(await res.statusCode).toBe(201);
     });
 })
