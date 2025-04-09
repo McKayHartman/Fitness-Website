@@ -13,7 +13,7 @@ export const workoutTable = sqliteTable('workouts', {
   workoutID: integer('workoutID').primaryKey().autoIncrement(),
   userId: integer('userId').notNull().references(() => usersTable.id),
   workoutDate: text('workoutDate').notNull(),
-  workoutPlanned: integer('workoutPlanned').notNull,
+  workoutPlanned: integer('workoutPlanned').notNull(),
 });
 
 export const exerciseTable = sqliteTable('exercises', {
