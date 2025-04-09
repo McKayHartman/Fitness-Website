@@ -1,43 +1,63 @@
 import Header from "./Header";
+import { useState } from "react";
+
 // lay out web page
 export default function CreateAccountPage() {
     return (
-        <div className="container">
-			<Header />
-            <TextField />
-            <TextField id="right"/>
-        </div>
-        
+        <>
+            <div className="container">
+                <TextField />
+            </div>
+        </>
     );
 }
 
-// procedure to create the title field
+// component containing user interactive fields
 function TextField() {
+    // tesing props
+    const email = { title: "Email", value: ""};
+    const username = { title: "Username", value: ""};
+    const password = { title: "Password", value: ""};
+
+    // confirm references are working
+    function displayValues() {
+        console.log(email.value);
+        console.log(username.value);
+        console.log(password.value);
+    }
+
     return (
         <div className="flex-container">
-            <h1>Section Title</h1>
-            <Textbox />
-            <Textbox />
-            <Textbox />
-            <SubmitButton />
+            <h1>Create Account</h1>
+            <Textbox field={ email } />
+            <Textbox field={ username } />
+            <Textbox field={ password } />
+            <div>
+                <button className="submitButton" onClick={ displayValues }>Submit</button>
+            </div>
         </div>
     );
 }
 
-// lay out each title and input field
-function Textbox() {
+// modify Textbox function to accept objects for input information
+function Textbox({ field }) {
+
+    // state variable to track input field
+    const [textInput, setText] = useState('');
+
+    // receive given event as parameter for manipulation
+    function handleChange(event) {
+        // save value on event occurance
+        const newVal = event.target.value;
+        // update based on new user input using state hook
+        setText(newVal);
+        field.value = newVal;
+    }
+
     return (
         <div className="flex-item">
-            <p>Title</p>
-            <input />
+            <p>{ field.title }</p>
+            <input type="text" onChange={ handleChange }/>
         </div>
     );
-}
-
-function SubmitButton() {
-    return (
-        <div>
-            <button className="submitButton">Submit</button>
-        </div>
-    )
 }
