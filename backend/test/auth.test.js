@@ -1,5 +1,5 @@
 import { expect, test } from 'vitest';
-import { hash, sameHash } from '../auth.js';
+import { hash, sameHash } from '../hash.js';
 
 // test sameHash
 test('sameHash', async () => {

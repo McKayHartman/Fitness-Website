@@ -1,3 +1,82 @@
-{
-    
-}
+[
+  {
+    "id": 1,
+    "name": "Push-Up",
+    "muscleGroup": "Chest",
+    "description": "A basic upper body exercise that targets the chest, shoulders, and triceps.",
+    "difficulty": "Beginner",
+    "videoUrl": "https://example.com/pushup-demo"
+  },
+  {
+    "id": 2,
+    "name": "Squat",
+    "muscleGroup": "Legs",
+    "description": "A fundamental lower body exercise that strengthens the quadriceps, hamstrings, and glutes.",
+    "difficulty": "Beginner",
+    "videoUrl": "https://example.com/squat-demo"
+  },
+  {
+    "id": 3,
+    "name": "Lunge",
+    "muscleGroup": "Legs",
+    "description": "An effective exercise for building lower body strength and balance.",
+    "difficulty": "Beginner",
+    "videoUrl": "https://example.com/lunge-demo"
+  },
+  {
+    "id": 4,
+    "name": "Plank",
+    "muscleGroup": "Core",
+    "description": "A core-strengthening exercise that improves stability and posture.",
+    "difficulty": "Intermediate",
+    "videoUrl": "https://example.com/plank-demo"
+  },
+  {
+    "id": 5,
+    "name": "Burpee",
+    "muscleGroup": "Full Body",
+    "description": "A high-intensity exercise that works multiple muscle groups and boosts cardiovascular fitness.",
+    "difficulty": "Intermediate",
+    "videoUrl": "https://example.com/burpee-demo"
+  },
+  {
+    "id": 6,
+    "name": "Bench Press",
+    "muscleGroup": "Chest",
+    "description": "A compound exercise that targets the chest, shoulders, and triceps for upper body strength.",
+    "difficulty": "Intermediate",
+    "videoUrl": "https://example.com/benchpress-demo"
+  },
+  {
+    "id": 7,
+    "name": "Deadlift",
+    "muscleGroup": "Back",
+    "description": "A compound movement that strengthens the back, glutes, and legs, promoting overall strength.",
+    "difficulty": "Advanced",
+    "videoUrl": "https://example.com/deadlift-demo"
+  },
+  {
+    "id": 8,
+    "name": "Overhead Press",
+    "muscleGroup": "Shoulders",
+    "description": "An effective exercise for building shoulder strength and stability.",
+    "difficulty": "Intermediate",
+    "videoUrl": "https://example.com/overheadpress-demo"
+  },
+  {
+    "id": 9,
+    "name": "Bicep Curl",
+    "muscleGroup": "Arms",
+    "description": "A basic exercise focused on developing the biceps.",
+    "difficulty": "Beginner",
+    "videoUrl": "https://example.com/bicepcurl-demo"
+  },
+  {
+    "id": 10,
+    "name": "Tricep Extension",
+    "muscleGroup": "Arms",
+    "description": "An exercise targeting the triceps to improve arm strength.",
+    "difficulty": "Beginner",
+    "videoUrl": "https://example.com/tricepextension-demo"
+  }
+]
