@@ -27,11 +27,8 @@ describe('Test auth api', async () => {
         
         const testUser = { email: "loginTestuser@spottr.com", password: "test", 
             firstName: "first", lastName: "last"};
-        console.log('1');
         await request.post('/api/auth/register').send(testUser);
-        console.log('2');
         const res = await request.post('/api/auth/login').send(testUser);
-        console.log('3');
         await request.delete('/api/auth/deleteUser').send(testUser);
         expect(await res.statusCode).toBe(201);
     });
