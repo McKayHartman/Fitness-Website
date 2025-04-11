@@ -29,5 +29,15 @@
     "prettier": "3.5.3",
     "supertest": "^7.1.0",
     "vitest": "^3.0.9"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "bcrypt",
+      "esbuild",
+      "sqlite3"
+    ],
+    "ignoredBuiltDependencies": [
+      "better-sqlite3"
+    ]
   }
 }
