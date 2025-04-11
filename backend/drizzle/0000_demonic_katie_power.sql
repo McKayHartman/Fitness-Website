@@ -22,8 +22,7 @@ CREATE TABLE `users` (
 	`id` integer PRIMARY KEY AUTOINCREMENT NOT NULL,
 	`email` text NOT NULL,
 	`password` text NOT NULL,
-	`firstName` text,
-	`lastName` text,
+	`username` text NOT NULL,
 	`friends` text
 );
 --> statement-breakpoint
