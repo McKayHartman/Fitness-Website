@@ -39,9 +39,7 @@ Include a link to a video showing the system working.
 Grading criteria (10 points): This section will be graded based on the quality of the video and on the evidence that the features are running as expected. Additional criteria are the relevance of the demonstrated functionalities, the correctness of the functionalities, and quality of the developed system from the external point of view (user interface).
 
 ### Code quality
-Describe how your team managed code quality. What were your policies, conventions, adopted best practices, etc. to foster high-quality code? 
-
-Grading criteria (4 points): Adequate list of practices that were adopted to improve code quality and clear description with adequate use of language.
+Our team prioritized code quality by implementing several key practices. We used clear and descriptive comments to explain complex or less intuitive sections of code, ensuring that all team members could easily understand and navigate the project. Additionally, we adopted a convention of assigning meaningful and consistent names to variables and components, promoting clarity and enabling seamless collaboration across the team when working on shared components. We also made a concerted effort to refactor code from our first release, improving its structure, efficiency, and maintainability. These practices collectively allowed us to enhance the readability, functionality, and overall quality of our codebase.
 
 ### Lessons Learned
 In retrospect, describe what your team learned during this second release and what would you change if you would continue developing the project. 
