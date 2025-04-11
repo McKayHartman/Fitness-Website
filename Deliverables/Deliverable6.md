@@ -1,9 +1,9 @@
 This deliverable should describe the second release of your project. A release is a fully functional software that delivers a set of features (this doesn't need to be the complete set but the software needs to be usable). Structure your deliverable into the following sections.
 
 ### Introduction
-Provide 1-2 paragraphs to describe your system. This description should contain the value proposition and the main features. At the end of the introduction, include a link to your project on GitHub.
+Version 1 of this project consisted of an assortment of individual pages aimed to adhere to our predetermined goals as previously stated in our value statement, which goes as follow: We help fitness newcomers build confidence and independence by offering an online learning platform that teaches newcomers the best way to begin and supports them into becoming consistent. For version 2 of our project, we focused on enhancing user experience in order to increase this project's value. We now have a functional system that contains a proper Create Account and a Login page which users can use an email and password to log into, an improved backend with a working database to store the values, refined UI for current pages and header navigation, and a calendar function.
 
-Grading criteria (1 point): This section will be evaluated in terms of correctness, completeness, thoroughness, consistency, coherence, and adequate use of language. The description should be consistent with the current state of the project. You should include the link to GitHub.
+Follow this link to view the current state of this project.
 
 ### Requirements
 List in this section, the requirements and associated pull request that you implemented for this release, following the example below---include the description of the requirement, a link to the issue,  a link to the pull request(s) that implement the requirement, who implemented the requirement, who approved it, and a print screen that depicts the implemented feature (if applicable). Order the requirements by the name of the student who implemented them.
@@ -39,9 +39,7 @@ Include a link to a video showing the system working.
 Grading criteria (10 points): This section will be graded based on the quality of the video and on the evidence that the features are running as expected. Additional criteria are the relevance of the demonstrated functionalities, the correctness of the functionalities, and quality of the developed system from the external point of view (user interface).
 
 ### Code quality
-Describe how your team managed code quality. What were your policies, conventions, adopted best practices, etc. to foster high-quality code? 
-
-Grading criteria (4 points): Adequate list of practices that were adopted to improve code quality and clear description with adequate use of language.
+Our team prioritized code quality by implementing several key practices. We used clear and descriptive comments to explain complex or less intuitive sections of code, ensuring that all team members could easily understand and navigate the project. Additionally, we adopted a convention of assigning meaningful and consistent names to variables and components, promoting clarity and enabling seamless collaboration across the team when working on shared components. We also made a concerted effort to refactor code from our first release, improving its structure, efficiency, and maintainability. These practices collectively allowed us to enhance the readability, functionality, and overall quality of our codebase.
 
 ### Lessons Learned
 Looking back on the second release, our team made significant progress in improving our problem-solving abilities, particularly in bridging the gap between frontend and backend communication. We intially struggled with disorganization, as not all members had a good understanding of the backend and how to make the frontend functionalities fully operational. Through collaboration and persistence, several of our team members worked together to ensure the 'Create Account' and 'Login' pages could effectively communicate with the database. By prioritizing teamwork, we were able to tackle this release earlier and focused on completing our minimum viable products while eliminating features that would have caused unnecessary delays.

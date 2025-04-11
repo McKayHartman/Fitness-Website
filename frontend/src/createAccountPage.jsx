@@ -3,29 +3,77 @@ import { useState } from "react";
 
 // lay out web page
 export default function CreateAccountPage() {
+
+    // These variables store the values of the input fields
+    const [email, setEmail] = useState("");
+    const [username, setUsername] = useState("");
+    const [password, setPassword] = useState(""); 
+
+    // ==================================================
+    // This is the onClick function for the submit button;
+    // It needs to be replaced eventually with 
+    // a function that sends the data to the server
+    // ==================================================
+    function displayValues(){
+        console.log(email);
+        console.log(username);
+        console.log(password);
+    }
+    // ==================================================
+    async function handleSubmit(event) 
+    {
+        event.preventDefault();
+
+        const response = await fetch("http://localhost:3000/api/auth/register",
+        {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                email: email,
+                username: username,
+                password: password
+            })
+        });
+
+            // Check if the response is valid
+        if (response.ok) {
+            try {
+                const data = await response.json();
+                console.log(data);  // You can handle the data here
+            } catch (error) {
+                console.error("Failed to parse JSON:", error);
+            }
+        } else {
+            console.error("HTTP error:", response.status);
+        }
+    }
+
+
+
     return (
         <>
             <div className="container">
-                <TextField />
+                <AccountCreationForm
+                    email={ email }
+                    setEmail={ setEmail }
+                    username={ username }
+                    setUsername={ setUsername }
+                    password={ password }
+                    setPassword={ setPassword }
+                />
+            </div>
+            <div>
+                <button className="submitButton" onClick={handleSubmit}>Submit</button>
             </div>
         </>
     );
 }
 
-// component containing user interactive fields
-function TextField() {
-    // tesing props
-    const email = { title: "Email", value: ""};
-    const username = { title: "Username", value: ""};
-    const password = { title: "Password", value: ""};
-
-    // confirm references are working
-    function displayValues() {
-        console.log(email.value);
-        console.log(username.value);
-        console.log(password.value);
-    }
-
+// This component/function is what holds all three textboxes
+// and the submit button
+function AccountCreationForm({ email, setEmail, username, setUsername, password, setPassword }) {
     return (
         <div className="flex-container">
             <h1>Create Account</h1>
@@ -35,29 +83,29 @@ function TextField() {
             <div>
                 <button className="submitButton" onClick={ postFields }>Submit</button>
             </div>
+
         </div>
     );
 }
 
 // modify Textbox function to accept objects for input information
-function Textbox({ field }) {
-
-    // state variable to track input field
-    const [textInput, setText] = useState('');
+function Textbox({ label, type, value, onChange }) {
 
     // receive given event as parameter for manipulation
     function handleChange(event) {
         // save value on event occurance
         const newVal = event.target.value;
-        // update based on new user input using state hook
-        setText(newVal);
-        field.value = newVal;
+        onChange(newVal);
     }
 
     return (
         <div className="flex-item">
-            <p>{ field.title }</p>
-            <input type="text" onChange={ handleChange }/>
+            <p>{label}</p>
+            <input 
+            type={type ?? "text"}
+            value={value}
+            onChange={handleChange}
+            />
         </div>
     );
 }

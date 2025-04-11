@@ -1,47 +1,50 @@
 .headercontainer {
-  width: 105%;
-  background: #414154;
-  height: var(--header-height);
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 105%;
+    background: #414154;
+    height: var(--header-height);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .header {
-  position: sticky;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  font-weight: 600;
-  font-size: 1.3rem;
-  user-select: none;
-  width: 100%;
-  height: var(--header-height);
-  top: 0px;
+    position: sticky;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 1.3rem;
+    user-select: none;
+    width: 100%;
+    height: var(--header-height);
+    top: 0px;
 }
 
 .headerleft,
 .headerright {
-  display: flex;
-  flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 .header h1 {
-  position: relative;
-  font-weight: 500;
-  align-self: center;
+    position: relative;
+    font-weight: 500;
+    align-self: center;
 }
 
 .header img {
-  padding-right: 4rem;
-  height: calc(var(--header-height) / 1.5);
-  align-self: center;
+    padding-right: 4rem;
+    height: calc(var(--header-height) / 1.5);
+    align-self: center;
+}
+#headerdots {
+    cursor: pointer;
 }
 
 #headerlogoname {
-  font-weight: 200;
-  font-size: 3em;
-  bottom: 0.3rem;
+    font-weight: 200;
+    font-size: 3em;
+    bottom: 0.3rem;
 }
