@@ -1,9 +1,9 @@
 This deliverable should describe the second release of your project. A release is a fully functional software that delivers a set of features (this doesn't need to be the complete set but the software needs to be usable). Structure your deliverable into the following sections.
 
 ### Introduction
-Provide 1-2 paragraphs to describe your system. This description should contain the value proposition and the main features. At the end of the introduction, include a link to your project on GitHub.
+Version 1 of this project consisted of an assortment of individual pages aimed to adhere to our predetermined goals as previously stated in our value statement, which goes as follow: We help fitness newcomers build confidence and independence by offering an online learning platform that teaches newcomers the best way to begin and supports them into becoming consistent. For version 2 of our project, we focused on enhancing user experience in order to increase this project's value. We now have a functional system that contains a proper Create Account and a Login page which users can use an email and password to log into, an improved backend with a working database to store the values, refined UI for current pages and header navigation, and a calendar function.
 
-Grading criteria (1 point): This section will be evaluated in terms of correctness, completeness, thoroughness, consistency, coherence, and adequate use of language. The description should be consistent with the current state of the project. You should include the link to GitHub.
+Follow this link to view the current state of this project.
 
 ### Requirements
 List in this section, the requirements and associated pull request that you implemented for this release, following the example below---include the description of the requirement, a link to the issue,  a link to the pull request(s) that implement the requirement, who implemented the requirement, who approved it, and a print screen that depicts the implemented feature (if applicable). Order the requirements by the name of the student who implemented them.
