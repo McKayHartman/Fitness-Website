@@ -1,9 +1,25 @@
 import "./sidebar.css";
-import { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import HomeIcon from "./assets/home.svg";
 
 function Sidebar({ sidebarOpen, setSidebarOpen }) {
+    let sidebarRef = useRef();
+
+    useEffect(() => {
+        let handler = (e) => {
+            if (!sidebarRef.current.contains(e.target)) {
+                setSidebarOpen(false);
+                console.log(sidebarRef.current);
+            }
+        };
+        document.addEventListener("mousedown", handler);
+
+        return () => {
+            document.removeEventListener("mousedown", handler);
+        };
+    });
+
     function SidebarItem(props) {
         return (
             <Link to={props.link} className={"sidebar-a"}>
@@ -15,7 +31,10 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
         );
     }
     return (
-        <div className={`sidebar ${sidebarOpen ? "active" : ""}`}>
+        <div
+            ref={sidebarRef}
+            className={`sidebar ${sidebarOpen ? "active" : ""}`}
+        >
             <button
                 className="sidebar-close-button"
                 onClick={() => {
