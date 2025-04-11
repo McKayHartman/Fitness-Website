@@ -17,7 +17,7 @@
     "bcrypt": "^5.1.1",
     "body-parser": "^1.20.3",
     "cors": "^2.8.5",
-    "dotenv": "^16.4.7",
+    "dotenv": "^16.5.0",
     "drizzle-orm": "^0.39.3",
     "express": "^4.21.2",
     "jsonwebtoken": "^9.0.2",
@@ -29,5 +29,12 @@
     "prettier": "3.5.3",
     "supertest": "^7.1.0",
     "vitest": "^3.0.9"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "bcrypt",
+      "esbuild",
+      "sqlite3"
+    ]
   }
 }

@@ -33,7 +33,7 @@ function TextField() {
             <Textbox field={ username } />
             <Textbox field={ password } />
             <div>
-                <button className="submitButton" onClick={ displayValues }>Submit</button>
+                <button className="submitButton" onClick={ postFields }>Submit</button>
             </div>
         </div>
     );

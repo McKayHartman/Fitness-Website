@@ -4,9 +4,8 @@ import { request } from "./setupTest.js";
 describe("test database", async () => {
     const testUser = {
         email: "createWorkoutTestuser@spottr.com",
-        password: "test",
-        firstName: "first",
-        lastName: "last",
+        username: "username",
+        password: "test"
     };
     test("create workout", async () => {
         await request.post("/api/auth/register").send(testUser);
