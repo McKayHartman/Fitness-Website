@@ -32,10 +32,18 @@ dbRoutes.post("/createWorkout", authenticateToken, async (req, res) => {
 
     console.log(workoutResult);
 
-    exercises.forEach(async (exercise) => {
+    exercises?.forEach(async (exercise) => {
         const exerciseResult = await db
             .insert(exerciseTable)
-            .values({ workoutID: workoutResult.workoutID });
+            .values({
+                workoutID: workoutResult.workoutID,
+                typeID: exercise.typeID,
+                difficulty: exercise.difficulty,
+                notes: exercise.notes,
+                reps: exercise.reps,
+                weight: exercise.weight,
+                duration: exercise.duration,
+            });
     });
 
     res.sendStatus(201);
@@ -59,6 +67,29 @@ dbRoutes.get("/getWorkouts", authenticateToken, async (req, res) => {
             .forEach((exercise) => workout.exercises.append(exercise));
     });
     res.status(201).json(workouts);
+});
+
+dbRoutes.delete("/deleteWorkout", authenticateToken, async (req, res) => {
+    email = req.user;
+    const [user] = await db
+        .select()
+        .from(usersTable)
+        .where(eq(usersTable.email, email));
+    const { workoutID } = req;
+
+    const workoutResult = await db
+        .delete(workoutTable)
+        .where(eq(workoutID, workoutTable.workoutID))
+        .returning();
+    const exercisesResult = await db
+        .delete(exerciseTable)
+        .where(eq(workoutID, exerciseTable.workoutID))
+        .returning();
+
+    console.log(workoutResult);
+    console.log(exercisesResult);
+
+    res.sendStatus(201);
 });
 
 export default dbRoutes;
