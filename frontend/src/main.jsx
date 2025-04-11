@@ -8,7 +8,7 @@ import CreateAccountPage from "./createAccountPage.jsx";
 import About from "./About.jsx";
 import { BrowserRouter, Routes, Route, createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import Header from "./Header.jsx";
-
+import CalendarPage from "./Calendar.jsx";
 function HeaderWrapper(){
     return(
         <>
@@ -38,6 +38,10 @@ const router = createBrowserRouter([
             {
                 path: "/about",
                 element: <About />
+            },
+            {
+                path: "/calendar",
+                element: <CalendarPage />
             }
         ]
     }
