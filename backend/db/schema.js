@@ -10,7 +10,11 @@ export const usersTable = sqliteTable('users', {
 });
 
 export const workoutTable = sqliteTable('workouts', {
+<<<<<<< Updated upstream
   workoutID: integer('workoutID').primaryKey({autoIncrement: true}),
+=======
+  workoutID: integer('workoutID').primaryKey().autoIncrement().notNull(),
+>>>>>>> Stashed changes
   userId: integer('userId').notNull().references(() => usersTable.id),
   workoutDate: text('workoutDate').notNull(),
   workoutPlanned: integer('workoutPlanned').notNull(),
