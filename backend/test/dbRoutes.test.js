@@ -1,0 +1,24 @@
+import { describe, assert, expect, test } from "vitest";
+import { request } from "./setupTest.js";
+
+describe("test database", async () => {
+    const testUser = {
+        email: "createWorkoutTestuser@spottr.com",
+        password: "test",
+        firstName: "first",
+        lastName: "last",
+    };
+    test("create workout", async () => {
+        await request.post("/api/auth/register").send(testUser);
+        const login = await request.post("/api/auth/login").send(testUser);
+        const token = login.res.text.slice(1, -1);
+        console.log(token.slice(1, -1));    
+        const testWorkout = {
+            userID: "9999",
+            workoutID: "",
+            planned: true,
+        };
+        await request.delete("/api/auth/deleteUser").send(testUser);
+        assert(true);
+    });
+});

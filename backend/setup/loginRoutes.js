@@ -28,7 +28,7 @@ loginRoutes.post("/login", async (req, res) => {
     .where(eq(usersTable.email, email));
 
   // check password
-  if (await sameHash(password, user.passwordHash)) {
+  if (await sameHash(password, user.password)) {
     // generate a token
     const token = generateToken(email);
     res.status(201).json(token);
@@ -48,7 +48,7 @@ loginRoutes.post("/register", async (req, res) => {
   } else {
     const result = await db.insert(usersTable).values({
       email: email,
-      passwordHash: await hash(password),
+      password: await hash(password),
       firstName: firstName,
       lastName: lastName,
     });
@@ -68,7 +68,7 @@ loginRoutes.delete("/deleteUser", async (req, res) => {
       .select()
       .from(usersTable)
       .where(eq(usersTable.email, email));
-    if (sameHash(password, user.passwordHash)) {
+    if (sameHash(password, user.password)) {
       const result = await db
         .delete(usersTable)
         .where(eq(usersTable.email, email));

@@ -1,9 +1,9 @@
 import jwt from "jsonwebtoken";
 import "dotenv/config";
 
-// creates a token that will expire in 30 minutes.
+// creates a token that will not expire. We should change this later.
 export function generateToken(username) {
-  return jwt.sign(username, process.env.TOKEN_SECRET, { expiresIn: "1800s" });
+  return jwt.sign(username, process.env.TOKEN_SECRET);
 }
 
 // middleware function to authenticate a token
