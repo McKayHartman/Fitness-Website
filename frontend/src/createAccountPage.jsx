@@ -20,6 +20,35 @@ export default function CreateAccountPage() {
         console.log(password);
     }
     // ==================================================
+    async function handleSubmit(event) 
+    {
+        event.preventDefault();
+
+        const response = await fetch("http://localhost:3000/api/auth/register",
+        {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                email: email,
+                username: username,
+                password: password
+            })
+        });
+
+            // Check if the response is valid
+        if (response.ok) {
+            try {
+                const data = await response.json();
+                console.log(data);  // You can handle the data here
+            } catch (error) {
+                console.error("Failed to parse JSON:", error);
+            }
+        } else {
+            console.error("HTTP error:", response.status);
+        }
+    }
 
 
 
@@ -36,7 +65,7 @@ export default function CreateAccountPage() {
                 />
             </div>
             <div>
-                <button class="submitButton" onClick={displayValues}>Submit</button>
+                <button className="submitButton" onClick={handleSubmit}>Submit</button>
             </div>
         </>
     );
