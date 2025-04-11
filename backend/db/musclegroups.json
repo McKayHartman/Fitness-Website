@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "name": "Chest",
+      "description": "Pectoral muscles responsible for pushing movements."
+    },
+    {
+      "id": 2,
+      "name": "Legs",
+      "description": "Muscles of the lower body including quadriceps, hamstrings, and calves."
+    },
+    {
+      "id": 3,
+      "name": "Back",
+      "description": "Upper and middle back muscles such as the latissimus dorsi and trapezius."
+    },
+    {
+      "id": 4,
+      "name": "Shoulders",
+      "description": "Deltoid muscles that support arm movement and shoulder stability."
+    },
+    {
+      "id": 5,
+      "name": "Arms",
+      "description": "Biceps, triceps, and forearm muscles involved in lifting and pulling."
+    },
+    {
+      "id": 6,
+      "name": "Core",
+      "description": "Abdominal and lower back muscles that stabilize the body and maintain posture."
+    }
+  ]
+  
