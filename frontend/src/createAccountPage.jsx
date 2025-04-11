@@ -77,9 +77,13 @@ function AccountCreationForm({ email, setEmail, username, setUsername, password,
     return (
         <div className="flex-container">
             <h1>Create Account</h1>
-            <Textbox label="Email" value={ email } onChange={setEmail} />
-            <Textbox label="Username" value={ username } onChange={setUsername} />
-            <Textbox label="Password" type="password" value={ password } onChange={setPassword} />
+            <Textbox field={ email } />
+            <Textbox field={ username } />
+            <Textbox field={ password } />
+            <div>
+                <button className="submitButton" onClick={ postFields }>Submit</button>
+            </div>
+
         </div>
     );
 }
