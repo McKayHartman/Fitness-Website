@@ -10,8 +10,7 @@ describe("Test auth api", async () => {
         const testUser = {
             email: "registerTestuser@spottr.com",
             username: "username",
-            password: "test"
-            
+            password: "test",
         };
         await request.delete("/api/auth/deleteUser").send(testUser);
         const res = await request.post("/api/auth/register").send(testUser);
@@ -23,7 +22,7 @@ describe("Test auth api", async () => {
         const deleteUser = {
             email: "deleteTestUser@spottr.com",
             username: "username",
-            password: "test"
+            password: "test",
         };
         await request.post("/api/auth/register").send(deleteUser);
         const res = await request
@@ -36,11 +35,14 @@ describe("Test auth api", async () => {
         const testUser = {
             email: "loginTestuser@spottr.com",
             username: "username",
-            password: "test"
+            password: "test",
         };
         await request.post("/api/auth/register").send(testUser);
         const res = await request.post("/api/auth/login").send(testUser);
         await request.delete("/api/auth/deleteUser").send(testUser);
+        const data = await JSON.parse(res.text)
+        console.log(data);
         expect(await res.statusCode).toBe(201);
+        assert(data.token);
     });
 });

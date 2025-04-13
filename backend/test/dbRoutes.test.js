@@ -1,5 +1,6 @@
 import { describe, assert, expect, test } from "vitest";
 import { request } from "./setupTest.js";
+    /*
 
 describe("test database", async () => {
     const testUser = {
@@ -7,7 +8,6 @@ describe("test database", async () => {
         password: "test",
         username: "testUsername",
     };
-    /*
     test("create workout", async () => {
         await request.post("/api/auth/register").send(testUser);
         const login = await request.post("/api/auth/login").send(testUser);
@@ -24,5 +24,5 @@ describe("test database", async () => {
         await request.delete("/api/auth/deleteUser").send(testUser);
         assert(true);
     });
-    */
 });
+    */
