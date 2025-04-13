@@ -31,7 +31,7 @@ loginRoutes.post("/login", async (req, res) => {
   if (await sameHash(password, user.password)) {
     // generate a token
     const token = generateToken(email);
-    res.status(201).json(token);
+    res.status(201).json({ token, email: user.email, firstName: user.firstName });
   } else {
     res.status(500).json({ error: "Login failed." });
   }
@@ -39,7 +39,7 @@ loginRoutes.post("/login", async (req, res) => {
 
 loginRoutes.post("/register", async (req, res) => {
   // get the body's inputs
-  const { password, email, firstName, lastName } = req.body;
+  const { email, username, password } = req.body;
 
   // check if user exists
   const users = await db.select().from(usersTable);
@@ -48,9 +48,8 @@ loginRoutes.post("/register", async (req, res) => {
   } else {
     const result = await db.insert(usersTable).values({
       email: email,
-      password: await hash(password),
-      firstName: firstName,
-      lastName: lastName,
+      username: username,
+      password: await hash(password)
     });
     res.status(201).json({ message: `User ${email} registered!` });
   }

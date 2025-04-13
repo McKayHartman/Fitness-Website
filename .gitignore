@@ -2,6 +2,7 @@
 *.db
 node_modules
 pnpm-lock.yaml
+drizzle
 dist
 .obsidian
 .env
