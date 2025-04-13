@@ -8,19 +8,20 @@ import setupRouter from './setupRouter.js';
 export default () => {
     const app = express();
 
-    // use bodyParser for capability to parse the bodies of REST requests
-    app.use(bodyParser.urlencoded({ extended: false }))
-    app.use(bodyParser.json())
+    // Middleware to parse JSON and URL-encoded request bodies
+    app.use(bodyParser.urlencoded({ extended: false }));
+    app.use(bodyParser.json());
 
-    // use cors to allow access from frontend
+    // Set up CORS for frontend access
     app.use(cors({
-        origin: ['http://localhost:3000', 'http://localhost:5173'],
+        origin: ['http://localhost:5173'], // Make sure this matches your frontend URL
         methods: ['GET', 'POST', 'PUT', 'DELETE'],
-        allowedHeaders: ['Content-Type', 'Authorization']
+        allowedHeaders: ['Content-Type', 'Authorization'],
+        credentials: true // Allow cookies and credentials if needed
     }));
 
-    // set up the API routes
+    // Set up API routes using setupRouter
     setupRouter(app);
 
     return app;
-}
+};

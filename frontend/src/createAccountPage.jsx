@@ -62,6 +62,7 @@ export default function CreateAccountPage() {
                     setUsername={ setUsername }
                     password={ password }
                     setPassword={ setPassword }
+                    handleSubmit={handleSubmit}
                 />
             </div>
             <div>
@@ -73,15 +74,15 @@ export default function CreateAccountPage() {
 
 // This component/function is what holds all three textboxes
 // and the submit button
-function AccountCreationForm({ email, setEmail, username, setUsername, password, setPassword }) {
+function AccountCreationForm({ email, setEmail, username, setUsername, password, setPassword, handleSubmit }) {
     return (
         <div className="flex-container">
             <h1>Create Account</h1>
-            <Textbox field={ email } />
-            <Textbox field={ username } />
-            <Textbox field={ password } />
+            <Textbox label="Email" field={ email } onChange={setEmail}/>
+            <Textbox label="Username" field={ username } onChange={setUsername}/>
+            <Textbox label="Password" field={ password } onChange={setPassword}/>
             <div>
-                <button className="submitButton" onClick={ postFields }>Submit</button>
+                <button className="submitButton" onClick={handleSubmit}>Submit</button>
             </div>
 
         </div>
