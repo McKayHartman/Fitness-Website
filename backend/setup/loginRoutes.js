@@ -31,7 +31,7 @@ loginRoutes.post("/login", async (req, res) => {
   if (await sameHash(password, user.password)) {
     // generate a token
     const token = generateToken(email);
-    res.status(201).json({ token });
+    res.status(201).json({ token, email: user.email, firstName: user.firstName });
   } else {
     res.status(500).json({ error: "Login failed." });
   }

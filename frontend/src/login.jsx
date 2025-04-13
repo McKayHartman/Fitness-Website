@@ -1,12 +1,14 @@
 import "./login.css";
 import Header from "./Header";
 import {useState} from "react";
+import {useNavigate} from "react-router-dom"
 
 function Login() {
     // create variables to store username and password
     // init as empty
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
+    const navigate = useNavigate();
 
     async function handleLogin(event) {
         event.preventDefault();
@@ -22,9 +24,13 @@ function Login() {
         if (response.ok) {
             const data = await response.json();
             const token = data.token;
+            const email = data.email;
 
             localStorage.setItem("token", token);
+            localStorage.setItem("email", email);
             console.log("JWT stored", token);
+
+            navigate("/")
 
         } else {
             console.error("Login failed");
