@@ -5,10 +5,7 @@ const PORT = 3000;
 
 const app = setupServer();
 
-// run the app on the port
+// Run the app on the port
 app.listen(PORT, () => {
-    console.log(`Ready at https://localhost:${PORT}!`);
-    fetch("http://localhost:3000/api/auth/something")
-       .then((value) => value.json()
-       .then(thing => console.log(thing)));
-})
+    console.log(`Ready at http://localhost:${PORT}!`);
+});

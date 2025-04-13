@@ -1,5 +1,5 @@
 import FullCalendar from "@fullcalendar/react";
-import dayGridPlugin from "@fullcalendar/daygrid"; // a plugin!
+import dayGridPlugin from "@fullcalendar/daygrid";
 import "./calendarPage.css"
 import { PieChart, Pie, Cell, Legend, Tooltip } from 'recharts';
 
