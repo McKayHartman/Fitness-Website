@@ -1,14 +1,12 @@
 import "./login.css";
 import Header from "./Header";
 import {useState} from "react";
-import {useNavigate} from "react-router-dom"
 
 function Login() {
     // create variables to store username and password
     // init as empty
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
-    const navigate = useNavigate();
 
     async function handleLogin(event) {
         event.preventDefault();
