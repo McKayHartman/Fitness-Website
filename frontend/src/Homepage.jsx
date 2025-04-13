@@ -2,10 +2,16 @@ import "./homepage.css";
 import Header from "./Header.jsx";
 
 function Homepage() {
+const email = localStorage.getItem("email");
+
     return (
         <>
             <div className="homepageContainer">
                 <header>
+
+                    <h2>Welcome back, {email}!</h2>
+                    <p>Welcome to our website.</p>
+
                     <h2>Welcome to Spotter</h2>
                     <p>Your journey toward confidence and consistency begins here.</p>
                     <button className="create-account-button" onClick={() => window.location.href = '/register'}>
