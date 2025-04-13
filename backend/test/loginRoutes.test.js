@@ -9,9 +9,9 @@ describe("Test auth api", async () => {
     test("register user", async () => {
         const testUser = {
             email: "registerTestuser@spottr.com",
-            password: "test",
-            firstName: "first",
-            lastName: "last",
+            username: "username",
+            password: "test"
+            
         };
         await request.delete("/api/auth/deleteUser").send(testUser);
         const res = await request.post("/api/auth/register").send(testUser);
@@ -22,9 +22,8 @@ describe("Test auth api", async () => {
     test("delete user", async () => {
         const deleteUser = {
             email: "deleteTestUser@spottr.com",
-            password: "test",
-            firstName: "first",
-            lastName: "last",
+            username: "username",
+            password: "test"
         };
         await request.post("/api/auth/register").send(deleteUser);
         const res = await request
@@ -36,9 +35,8 @@ describe("Test auth api", async () => {
     test("log in", async () => {
         const testUser = {
             email: "loginTestuser@spottr.com",
-            password: "test",
-            firstName: "first",
-            lastName: "last",
+            username: "username",
+            password: "test"
         };
         await request.post("/api/auth/register").send(testUser);
         const res = await request.post("/api/auth/login").send(testUser);

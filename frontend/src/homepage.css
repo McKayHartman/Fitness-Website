@@ -1,22 +1,100 @@
+/* general xontainer */
 .homepageContainer {
     margin: 0;
-    padding: 0;
+    padding: 0 1.5rem;
     font-weight: 400;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* header section */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 4rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+header h2 {
+    font-size: 2.2rem;
+    color: #222;
+    margin-bottom: 1rem;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 2rem;
+}
+
+/* create account button */
+.create-account-button {
+    background-color: #ff6f61;
+    color: white;
+    padding: 0.75px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.create-account-button:hover {
+    background-color: #ff4b3a;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    color: whitesmoke;
+}
+
+/* body image */
+.body {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
 }
 
 .body img {
-    align-items: center;
     max-width: 100%;
     height: auto;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Flex Box */
+/* footer section */
+.footer {
+    margin-top: auto;
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    border-top: 3px solid #ff6f61;
+}
 
-.homepageContainer {
+.footer-links {
+    list-style: none;
+    padding: 0;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    align-content: space-around;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.footer-links li a {
+    color: #ff6f61;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.footer-links li a:hover {
+    text-decoration: underline;
+    color: #ff4b3a;
 }

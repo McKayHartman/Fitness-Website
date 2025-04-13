@@ -1,7 +1,7 @@
 import dots from "./assets/SidebarDots.svg";
 import "./header.css";
 import Sidebar from "./sidebar";
-import React, { useState } from "react";
+import { useState } from "react";
 function HeaderWords({ setSidebarOpen }) {
     return (
         <div className="container header">
