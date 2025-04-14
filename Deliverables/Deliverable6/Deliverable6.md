@@ -62,10 +62,9 @@ An example of a test case. Include in your answer a GitHub link to the class bei
 A print screen showing the result of the automated tests execution. 
 Grading criteria (3 points): You should have an adequate number of automated tests. They should be well written and match the features implemented in the aforementioned pull requests.
 
-## Demo
-Include a link to a video showing the system working.
+### Demo
 
-Grading criteria (10 points): This section will be graded based on the quality of the video and on the evidence that the features are running as expected. Additional criteria are the relevance of the demonstrated functionalities, the correctness of the functionalities, and quality of the developed system from the external point of view (user interface).
+Watch the video on [YouTube](https://www.youtube.com/watch?v=uNh5QDWfY8Q)
 
 ## Code quality
 Our team prioritized code quality by implementing several key practices. We used clear and descriptive comments to explain complex or less intuitive sections of code, ensuring that all team members could easily understand and navigate the project. Additionally, we adopted a convention of assigning meaningful and consistent names to variables and components, promoting clarity and enabling seamless collaboration across the team when working on shared components. We also made a concerted effort to refactor code from our first release, improving its structure, efficiency, and maintainability. These practices collectively allowed us to enhance the readability, functionality, and overall quality of our codebase.
