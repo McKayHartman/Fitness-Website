@@ -45,6 +45,13 @@ Approved by: Lacy Hamilton <br>
 Print screen: <br>
 ![ProgressTrackerUI](./Images/CreateGoalUIDemo.png) <br>
 
+Requirement: As a user, I want there to be a field to track my progress and edit my own consistency goals. <br>
+Issue: [#168](https://github.com/McKayHartman/Fitness-Website/issues/168) <br>
+Pull Request: [#150](https://github.com/McKayHartman/Fitness-Website/pull/150) <br>
+Implemented by: Marco de la Rosa <br>
+Approved by: Lacy Hamilton <br>
+Print screen: <br>
+![CalendarUI](./Images/calendarUI.png) <br>
 
 ## Tests
 You should implement automated tests for the features described in the previous subsection. Provide the following information:
