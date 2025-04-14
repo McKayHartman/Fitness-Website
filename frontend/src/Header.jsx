@@ -16,10 +16,10 @@ function HeaderWords({ setSidebarOpen }) {
                         setSidebarOpen(true);
                     }}
                 ></img>
-                <h1>CurPage</h1>
+                <h1></h1>
             </div>
             <div className="headerright">
-                <h1 id="headerlogoname">LOGO</h1>
+                <h1 id="headerlogoname">SPOTTER</h1>
             </div>
         </div>
     );
