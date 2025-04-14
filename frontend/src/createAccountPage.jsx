@@ -1,8 +1,13 @@
 import Header from "./Header";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+
 
 // lay out web page
 export default function CreateAccountPage() {
+    // hook
+    const navigate = useNavigate();
+
 
     // These variables store the values of the input fields
     const [email, setEmail] = useState("");
@@ -42,6 +47,7 @@ export default function CreateAccountPage() {
             try {
                 const data = await response.json();
                 console.log(data);  // You can handle the data here
+                navigate('/login');
             } catch (error) {
                 console.error("Failed to parse JSON:", error);
             }

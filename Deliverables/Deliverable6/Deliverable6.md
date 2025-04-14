@@ -29,12 +29,27 @@ Implemented by: Lacy Hamilton <br>
 Approved by: Bryce Panza <br>
 Print screen: ![HomepageUI](./Images/homepageUI.png) <br>
 
+Requirement: As a frequent user, I would like to have a simple and quick login system so I can easily access my homepage. <br>
+Issue: [#2] (https://github.com/McKayHartman/Fitness-Website/issues/2) <br>
+Pull request: [#158] (https://github.com/McKayHartman/Fitness-Website/pull/158) <br>
+Implemented by: McKay Hartman <br>
+Approved by: Christian Lamb
+Print screen:![loginPage](./Images/functionalLogin.png) <br>
+
+Requirment: As a new user, I would like to be able to create a new, secure account so I can log in. <br>
+Issue [#70] (https://github.com/McKayHartman/Fitness-Website/issues/70) <br>
+Pull request: [#158] (https://github.com/McKayHartman/Fitness-Website/pull/158) <br>
+Implemented by: McKay Hartman <br>
+Approved by: Christian Lamb
+Print screen: ![accountCreationPage](./Images/functionalAccCreate.png)
+
 Requirement: As a user, I want there to be a field to track my progress and edit my own consistency goals. <br>
 Issue: [#153](https://github.com/McKayHartman/Fitness-Website/issues/153) <br>
 Pull Request: [#154](https://github.com/McKayHartman/Fitness-Website/pull/154)
 Implemented by: Bryce Panza <br>
 Approved by: Lacy Hamilton <br>
 Print screen: ![ProgressTrackerUI](./Images/CreateGoalUIDemo.png) <br>
+
 
 
 ## Tests
