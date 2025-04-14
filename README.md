@@ -35,6 +35,6 @@ This project has its own developed [license](https://github.com/McKayHartman/Fit
 ## Other Documents:
 
 [Exercises](./docs/exercises.md): Specification for exercises that the algorithm will recognize. <br>
-Also includes list of specified [muscle groups (./docs/muscleGroups.md) & [equipment](./docs/equipment.md). <br>
+Also includes list of specified [muscle groups](./docs/muscleGroups.md) & [equipment](./docs/equipment.md). <br>
 [Questionnaire](./docs/questionnaire.md): Specification for the diagnostic questionnaire given to new users. <br>
 [Database](./docs/database.md): Specification for the database objects. <br>

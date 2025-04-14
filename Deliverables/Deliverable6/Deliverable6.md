@@ -54,14 +54,13 @@ Print screen: <br>
 ![CalendarUI](./Images/calendarUI.png) <br>
 
 ## Tests
-You should implement automated tests for the features described in the previous subsection. Provide the following information:
 
-Test framework you used to develop your tests (e.g., JUnit, unittest, pytest, etc.)
-Link to your GitHub folder where your automated unit tests are located.
-An example of a test case. Include in your answer a GitHub link to the class being tested and to the test.
-A print screen showing the result of the automated tests execution. 
-Grading criteria (3 points): You should have an adequate number of automated tests. They should be well written and match the features implemented in the aforementioned pull requests.
-
+All of the added requirements in this section were frontend, browser features. As such, we used vitest (a react-based testing framework) with browser mode. The tests are stored [here](https://github.com/McKayHartman/Fitness-Website/tree/main/frontend/test).
+For an example test case, here is the testing for the login page. The file is [here](https://github.com/McKayHartman/Fitness-Website/tree/main/frontend/test/login.test.jsx).
+![login testing](./Images/logintesting.png)
+This is a simple test case, testing the login frontend by testing if the elements are present, and can be interacted with.
+Here is the result of the test case execution:
+![login test result](./Images/logintestresult.png)
 ### Demo
 
 Watch the video on [YouTube](https://www.youtube.com/watch?v=uNh5QDWfY8Q)
