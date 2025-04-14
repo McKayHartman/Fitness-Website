@@ -8,17 +8,22 @@ const email = localStorage.getItem("email");
         <>
             <div className="homepageContainer">
                 <header>
+                        {email ? (
+                            <h2>Welcome back, {email}!</h2>
+                        ) : null}
 
-                    <h2>Welcome back, {email}!</h2>
-                    <p>Welcome to our website.</p>
+                        <p>Welcome to our website.</p>
 
-                    <h2>Welcome to Spotter</h2>
-                    <p>Your journey toward confidence and consistency begins here.</p>
-                    <button className="create-account-button" onClick={() => window.location.href = '/register'}>
-                        Register for Free
-                    </button>
-                </header>
+                        <h2>Welcome to Spotter</h2>
+                        <p>Your journey toward confidence and consistency begins here.</p>
 
+                        <button
+                            className="create-account-button"
+                            onClick={() => window.location.href = '/register'}
+                        >
+                            Register for Free
+                        </button>
+                    </header>
                 <div className="body">
                     <img src="https://i.imgur.com/6jlNGc1.jpeg" alt="Fitness Image" />
                 </div>
