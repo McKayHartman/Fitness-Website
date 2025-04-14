@@ -11,7 +11,7 @@ Pull request: [#156](https://github.com/McKayHartman/Fitness-Website/pull/156) <
 Implemented by: Lacy Hamilton <br>
 Approved by: Bryce Panza <br>
 Print screen: <br>
-![HomepageUI](./Images/homepageUI.png) <br>
+![HomepageUI](./Images/homepageUI.PNG) <br>
 
 Requirement: As a frequent user, I would like to have a simple and quick login system so I can easily access my homepage. <br>
 Issue: [#2](https://github.com/McKayHartman/Fitness-Website/issues/2) <br>
