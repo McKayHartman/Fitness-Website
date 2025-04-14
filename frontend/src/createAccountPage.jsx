@@ -87,9 +87,9 @@ function AccountCreationForm({ email, setEmail, username, setUsername, password,
             <Textbox label="Email" field={ email } onChange={setEmail}/>
             <Textbox label="Username" field={ username } onChange={setUsername}/>
             <Textbox label="Password" field={ password } onChange={setPassword}/>
-            <div>
+            {/* <div>
                 <button className="submitButton" onClick={handleSubmit}>Submit</button>
-            </div>
+            </div> */}
 
         </div>
     );
