@@ -34,8 +34,12 @@ A print screen showing the result of the automated tests execution.
 Grading criteria (3 points): You should have an adequate number of automated tests. They should be well written and match the features implemented in the aforementioned pull requests.
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 ### Demo
 Include a link to a video showing the system working.
+=======
+## Demo
+>>>>>>> Stashed changes
 =======
 ## Demo
 >>>>>>> Stashed changes
