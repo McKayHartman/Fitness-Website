@@ -4,14 +4,6 @@ import { userEvent } from "@vitest/browser/context";
 import { MemoryRouter } from "react-router-dom";
 import Header from "../src/Header";
 
-function testHeader() {
-    return (
-        <MemoryRouter>
-            <Header />
-        </MemoryRouter>
-    );
-}
-
 describe("sidebar", async () => {
     test("renders text", async () => {
         const { getByText } = render(

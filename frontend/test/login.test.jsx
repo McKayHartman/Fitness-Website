@@ -1,6 +1,5 @@
 import { expect, test, describe } from "vitest";
 import { render } from "vitest-browser-react";
-import { userEvent } from "@vitest/browser/context";
 import { MemoryRouter } from "react-router-dom";
 import Login from "../src/login";
 
