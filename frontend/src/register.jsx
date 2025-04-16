@@ -1,10 +1,9 @@
-import Header from "./Header";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 
 // lay out web page
-export default function CreateAccountPage() {
+export default function Register() {
     // hook
     const navigate = useNavigate();
 

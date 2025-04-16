@@ -26,7 +26,7 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                 <span className="sidebar-icon-button">
                     <img alt="sidebaricon" src={props.icon}></img>
                 </span>
-                <p>{props.children}</p>
+                <p>{props.text}</p>
             </Link>
         );
     }
@@ -42,18 +42,12 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
                     console.log("Closing sidebar");
                 }}
             />
-            <SidebarItem link="/" icon={HomeIcon}>
-                Home
-            </SidebarItem>
-            <SidebarItem link="/about" icon={HomeIcon}>
-                About
-            </SidebarItem>
-            <SidebarItem link="/login" icon={HomeIcon}>
-                Login
-            </SidebarItem>
-            <SidebarItem link="/register" icon={HomeIcon}>
-                Register
-            </SidebarItem>
+            <SidebarItem link="/" icon={HomeIcon} text={"Home"} />
+            <SidebarItem link="/calendar" icon={HomeIcon} text={"Calendar"} />
+            <SidebarItem link="/about" icon={HomeIcon} text={"About"} />
+            <SidebarItem link="/login" icon={HomeIcon} text={"Login"} />
+            <SidebarItem link="/register" icon={HomeIcon} text={"Register"} />
+            
         </div>
     );
 }

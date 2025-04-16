@@ -1,13 +1,13 @@
 import { expect, test, describe } from "vitest";
 import { render } from "vitest-browser-react";
 import { MemoryRouter } from "react-router-dom";
-import Login from "../src/login";
+import Register from "../src/register";
 
 describe("login", async () => {
     test("renders textboxes", async () => {
         const { getByRole } = render(
             <MemoryRouter>
-                <Login />
+                <Register />
             </MemoryRouter>,
         );
         await getByRole("textbox", { name: "username" });
@@ -16,20 +16,20 @@ describe("login", async () => {
     test("renders text", async () => {
         const { getByText } = render(
             <MemoryRouter>
-                <Login />
+                <Register />
             </MemoryRouter>,
         );
         await expect.element(getByText("Username")).toBeInTheDocument();
         await expect.element(getByText("Password")).toBeInTheDocument();
-        await expect.element(getByText("Create Account")).toBeInTheDocument();
+        await expect.element(getByText("Email")).toBeInTheDocument();
     });
-    test("click log in", async () => {
+    test("click register", async () => {
         const { getByRole } = render(
             <MemoryRouter>
-                <Login />
+                <Register />
             </MemoryRouter>,
         );
-        const loginButton = getByRole("button", { name: "Log In" });
+        const loginButton = getByRole("button", { name: "Submit" });
         await loginButton.click();
     });
 });
