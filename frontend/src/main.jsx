@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./App.jsx";
 import Homepage from "./Homepage.jsx";
 import Login from "./login.jsx";
-import CreateAccountPage from "./createAccountPage.jsx";
+import Register from "./register.jsx";
 import About from "./About.jsx";
 import { BrowserRouter, Routes, Route, createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import Header from "./Header.jsx";
@@ -33,7 +33,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/register",
-                element: <CreateAccountPage />
+                element: <Register />
             },
             {
                 path: "/about",
