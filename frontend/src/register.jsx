@@ -1,8 +1,12 @@
-import Header from "./Header";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+
 
 // lay out web page
-export default function CreateAccountPage() {
+export default function Register() {
+    // hook
+    const navigate = useNavigate();
+
 
     // These variables store the values of the input fields
     const [email, setEmail] = useState("");
@@ -42,6 +46,7 @@ export default function CreateAccountPage() {
             try {
                 const data = await response.json();
                 console.log(data);  // You can handle the data here
+                navigate('/login');
             } catch (error) {
                 console.error("Failed to parse JSON:", error);
             }
@@ -62,6 +67,7 @@ export default function CreateAccountPage() {
                     setUsername={ setUsername }
                     password={ password }
                     setPassword={ setPassword }
+                    handleSubmit={handleSubmit}
                 />
             </div>
             <div>
@@ -73,16 +79,16 @@ export default function CreateAccountPage() {
 
 // This component/function is what holds all three textboxes
 // and the submit button
-function AccountCreationForm({ email, setEmail, username, setUsername, password, setPassword }) {
+function AccountCreationForm({ email, setEmail, username, setUsername, password, setPassword, handleSubmit }) {
     return (
         <div className="flex-container">
             <h1>Create Account</h1>
-            <Textbox field={ email } />
-            <Textbox field={ username } />
-            <Textbox field={ password } />
-            <div>
-                <button className="submitButton" onClick={ postFields }>Submit</button>
-            </div>
+            <Textbox label="Email" field={ email } onChange={setEmail}/>
+            <Textbox label="Username" field={ username } onChange={setUsername}/>
+            <Textbox label="Password" field={ password } onChange={setPassword}/>
+            {/* <div>
+                <button className="submitButton" onClick={handleSubmit}>Submit</button>
+            </div> */}
 
         </div>
     );
