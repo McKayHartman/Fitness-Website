@@ -20,6 +20,13 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
         };
     });
 
+    function handleLogOut() {
+        console.log("logging out user");
+        localStorage.clear();
+
+        window.location.reload();
+    }
+
     function SidebarItem(props) {
         return (
             <Link to={props.link} className={"sidebar-a"}>
@@ -45,9 +52,20 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
             <SidebarItem link="/" icon={HomeIcon} text={"Home"} />
             <SidebarItem link="/calendar" icon={HomeIcon} text={"Calendar"} />
             <SidebarItem link="/about" icon={HomeIcon} text={"About"} />
-            <SidebarItem link="/login" icon={HomeIcon} text={"Login"} />
-            <SidebarItem link="/register" icon={HomeIcon} text={"Register"} />
-            
+
+            {localStorage.getItem("email") ? null :
+                <>
+                    <SidebarItem link="/login" icon={HomeIcon} text={"Login"} />
+                    <SidebarItem link="/register" icon={HomeIcon} text={"Register"} />
+                </>
+            }
+
+            {!localStorage.getItem("email") ? null : 
+                <div onClick={handleLogOut}>
+                    <SidebarItem link="/" icon={HomeIcon} text={"Log Out"} />
+                </div>
+            }
+
         </div>
     );
 }
