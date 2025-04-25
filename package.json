@@ -1,0 +1,13 @@
+{
+	"devDependencies": {
+		"cypress": "^14.3.2"
+	},
+	"pnpm": {
+		"ignoredBuiltDependencies": [
+			"cypress"
+		],
+		"onlyBuiltDependencies": [
+			"cypress"
+		]
+	}
+}
