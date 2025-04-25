@@ -19,21 +19,25 @@ loginRoutes.get("/something", async (req, res) => {
 });
 
 loginRoutes.post("/login", async (req, res) => {
-  // get the body's inputs
-  const { password, email } = req.body;
+  try{
+    // get the body's inputs
+    const { password, email } = req.body;
 
-  const [user] = await db
-    .select()
-    .from(usersTable)
-    .where(eq(usersTable.email, email));
+    const [user] = await db
+      .select()
+      .from(usersTable)
+      .where(eq(usersTable.email, email));
 
-  // check password
-  if (await sameHash(password, user.password)) {
-    // generate a token
-    const token = generateToken(email);
-    res.status(201).json({ token, email: user.email, firstName: user.firstName });
-  } else {
-    res.status(500).json({ error: "Login failed." });
+    // check password
+    if (await sameHash(password, user.password)) {
+      // generate a token
+      const token = generateToken(email);
+      res.status(201).json({ token, email: user.email, firstName: user.firstName });
+    } else {
+      res.status(500).json({ error: "Login failed." });
+    }
+  } catch (error) {
+    console.log("error found");
   }
 });
 

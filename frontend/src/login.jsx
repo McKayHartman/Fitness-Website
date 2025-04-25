@@ -1,38 +1,45 @@
 import "./login.css";
 import Header from "./Header";
 import {useState} from "react";
-import { Navigate } from "react-router-dom";
+// import { Navigate } from "react-router-dom";
+import {useNavigate} from 'react-router-dom';
 
 function Login() {
     // create variables to store username and password
     // init as empty
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
+    const navigate = useNavigate();
 
     async function handleLogin(event) {
         event.preventDefault();
 
-        const response = await fetch("http://localhost:3000/api/auth/login", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify({ email: username, password}),
-        });
+        try {
+            const response = await fetch("http://localhost:3000/api/auth/login", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({ email: username, password}),
+            });
 
-        if (response.ok) {
-            const data = await response.json();
-            const token = data.token;
-            const email = data.email;
+            if (response.ok) {
+                const data = await response.json();
+                const token = data.token;
+                const email = data.email;
 
-            localStorage.setItem("token", token);
-            localStorage.setItem("email", email);
-            console.log("JWT stored", token);
+                localStorage.setItem("token", token);
+                localStorage.setItem("email", email);
+                console.log("JWT stored", token);
 
-            Navigate("/")
+                navigate("/")
 
-        } else {
-            console.error("Login failed");
+            } else {
+                console.error("Login failed");
+            }
+        } catch (error) {
+            console.log("login error");
+            console.error(error);
         }
     }
 
@@ -67,7 +74,7 @@ function Login() {
                     />
                     <br />
 
-                    <button class="login-button" type="submit">
+                    <button className="login-button" type="submit">
                         Log In
                     </button>
                     <br />

@@ -17,12 +17,24 @@ const email = localStorage.getItem("email");
                         <h2>Welcome to Spotter</h2>
                         <p>Your journey toward confidence and consistency begins here.</p>
 
-                        <button
-                            className="create-account-button"
-                            onClick={() => window.location.href = '/register'}
-                        >
-                            Register for Free
-                        </button>
+                        {email ? null : 
+                            <>
+                                <button
+                                    className="create-account-button"
+                                    onClick={() => window.location.href = '/register'}
+                                >
+                                    Register for Free
+                                </button>
+
+                                <button
+                                    className="create-account-button"
+                                    onClick={() => window.location.href = '/login'}
+                                >
+                                    Log in with Existing Account
+                                </button>
+                            </>
+                        }
+                        
                     </header>
                 <div className="body">
                     <img src="https://i.imgur.com/6jlNGc1.jpeg" alt="Fitness Image" />
