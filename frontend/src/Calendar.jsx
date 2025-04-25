@@ -28,20 +28,20 @@ function AddGoal() {
             <h2>Edit Goal</h2>
 
             <label htmlFor="startDate" className="title">Start Date</label>
-            <input name="startDate" type="date" className="inputDate"/>
+            <input name="startDate" type="date" className="goalInput"/>
 
             <label htmlFor="endDate" className="title">End Date</label>
-            <input name="endDate" type="date" className="inputDate"/>
+            <input name="endDate" type="date" className="goalInput"/>
 
             <label htmlFor="frequency">Goal Frequency</label>
-            <select name="frequency" className="inputDate">
+            <select name="frequency" className="goalInput">
                 <option value="weekly">Weekly</option>
                 <option value="biweekly">Biweekly</option>
                 <option value="monthly">Monthly</option>
             </select>
                 
             <label htmlFor="numberWorkouts">Goal number of workouts</label>
-            <select name="numberWorkouts" className="inputDate">
+            <select name="numberWorkouts" className="goalInput">
                 {Array.from({ length: 9}, (_, i) => (
                     <option key={i + 1} value={i + 1}>
                         { i + 1 }
