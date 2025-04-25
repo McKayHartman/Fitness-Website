@@ -7,15 +7,15 @@
     gap: 5px;
     margin: 0;
     padding: 0;
-    width: 25%;
+    width: 15%;
     height: 100%;
-    background-color: black;
+    background-color: var(--background-color);
     overflow: auto;
+    border-right: 2px solid grey;
     transform: translateX(-100%);
     transition: transform 0.3s ease-in-out;
     flex: auto;
     flex-direction: column;
-    background-color: #3a3b3d;
 }
 
 .sidebar-a {
@@ -35,6 +35,13 @@
     background-color: #636569;
 }
 
+.sidebar-a.sidebar-icon-button svg {
+    transition: fill 0.2s;
+}
+.sidebar-a:hover .sidebar-icon-button svg {
+    fill: white;
+}
+
 .sidebar-a p {
     margin: 0;
     padding: 0;
@@ -49,18 +56,28 @@
 
 .sidebar-close-button {
     padding: 0;
+    background: none;
+    color: inherit;
+    border: none;
+    cursor: pointer;
+    outline: inherit;
     margin: 15px;
     align-self: last baseline;
     width: 40px;
     height: 40px;
-    border-radius: 15%;
-    background-color: #9c0202;
-    transition: background-color 0.3s;
+}
+.sidebar-close-button:hover {
+    background: none;
+}
+.sidebar-close-button svg {
+    width: 100%;
+    height: 100%;
+    transition: fill 0.2s;
+}
+.sidebar-close-button svg:hover {
+    fill: white;
 }
 
-.sidebar-close-button:hover {
-    background-color: #fa0000;
-}
 .sidebar-item-text {
     margin: 0;
     padding: 0;
@@ -73,4 +90,7 @@
     justify-content: center;
     align-content: center;
 }
-
+.sidebar-icon-button svg {
+    height: 100%;
+    width: 100%;
+}
