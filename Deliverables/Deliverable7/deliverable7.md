@@ -25,6 +25,13 @@ An example of an acceptance test. Include in your answer a GitHub link to the te
 A print screen/video showing the acceptance test execution. 
 Grading criteria (7 points): adequate choice of a test framework, coverage of the tests, quality of the tests, adequate example of an acceptance test, print screen/video showing successful tests execution.
 
+
+**Framework:** Cypress
+This test used Cypress to write a script to have it log in and validate that the test user was navigated to their home page and the test user was successfully logged in.
+
+**Link to test script:** https://github.com/McKayHartman/Fitness-Website/cypress/e2d/login.cy.js
+**Video:** [Video of Acceptance Test](../../cypress/videos/login.cy.js.mp4)
+
 ## Validation
 At the beginning of the semester, you talked to the clients/potential users to understand their needs. Now it is time to check if you are on the right track by conducting some user evaluation on the actual system. Include in this deliverable the following information:
 
