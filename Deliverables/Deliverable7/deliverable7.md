@@ -15,7 +15,7 @@ test('sameHash', async () => {
 ```
 
 Here are the results of the tests being run.
-![Successful test cases](./images/test-cases.jpg)
+![Successful test cases](./Images/test-cases.jpg)
 
 ## Acceptance Test
 We used Cypress to write a script to have it log in and validate that the test user was navigated to their home page and the test user was successfully logged in.The acceptance test is stored here: [Acceptance Test Script](../../cypress/e2e/login.cy.js). <br>
