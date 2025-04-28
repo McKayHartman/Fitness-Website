@@ -35,14 +35,14 @@ Grading criteria (7 points): adequate choice of a test framework, coverage of th
 
 ## Validation
 ### Script
-**Tasks Given to the User**
+#### Tasks Given to the User
 1) Create an account.
 2) Login to the user account that you created.
 3) Navigate to the different pages.
 	- About
 	- Calendar
 	- Homepage
-**Questions**
+#### Questions
 1) What is your impression of the website’s page layouts and the routing?
 2) On a scale of 1-10 what do you make of the goal tracking page?
 3) On a scale of 1-10 how inviting is the homepage?
