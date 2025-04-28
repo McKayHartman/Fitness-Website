@@ -1,8 +1,6 @@
 import "./login.css";
-import Header from "./Header";
 import {useState} from "react";
-// import { Navigate } from "react-router-dom";
-import {useNavigate} from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 function Login() {
     // create variables to store username and password
@@ -32,7 +30,8 @@ function Login() {
                 localStorage.setItem("email", email);
                 console.log("JWT stored", token);
 
-                navigate("/")
+
+                navigate("/");
 
             } else {
                 console.error("Login failed");
