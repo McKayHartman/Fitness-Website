@@ -17,32 +17,24 @@ A print screen showing the result of the unit tests execution.
 Grading criteria (5 points): adequate choice of a test framework, coverage of the tests, quality of the tests, adequate use of Mock objects, and a print screen showing successful test execution.
 
 ## Acceptance Test
-An acceptance test is a test that verifies the correct implementation of a feature from the user interface perspective. An acceptance test is a black box test (the system is tested without knowledge about its internal implementation). Provide the following information:
-
-Test framework you used to develop your tests (e.g., Selenium, Katalon Studio, Espresso2, Cucumber, etc.)
-Link to your GitHub folder where your automated acceptance tests are located.
-An example of an acceptance test. Include in your answer a GitHub link to the test and an explanation about the tested feature.
-A print screen/video showing the acceptance test execution. 
-Grading criteria (7 points): adequate choice of a test framework, coverage of the tests, quality of the tests, adequate example of an acceptance test, print screen/video showing successful tests execution.
-
 
 **Framework:** Cypress
 
 - This test used Cypress to write a script to have it log in and validate that the test user was navigated to their home page and the test user was successfully logged in.
 
-**Link to test script:** https://github.com/McKayHartman/Fitness-Website/blob/main/cypress/e2e/login.cy.js
-**Video:** [Video of Acceptance Test](../../cypress/videos/login.cy.js.mp4)
+**Link to test script:** [Acceptance Test Script](../../cypress/e2e/login.cy.js) <br>
+**Video:** [Acceptance Test](../../cypress/videos/login.cy.js.mp4) <br>
 
 ## Validation
 ### Script
-**Tasks Given to the User**
+#### Tasks Given to the User
 1) Create an account.
 2) Login to the user account that you created.
 3) Navigate to the different pages.
 	- About
 	- Calendar
 	- Homepage
-**Questions**
+#### Questions
 1) What is your impression of the website’s page layouts and the routing?
 2) On a scale of 1-10 what do you make of the goal tracking page?
 3) On a scale of 1-10 how inviting is the homepage?
