@@ -29,7 +29,7 @@ Grading criteria (7 points): adequate choice of a test framework, coverage of th
 **Framework:** Cypress
 This test used Cypress to write a script to have it log in and validate that the test user was navigated to their home page and the test user was successfully logged in.
 
-**Link to test script:** https://github.com/McKayHartman/Fitness-Website/cypress/e2d/login.cy.js
+**Link to test script:** https://github.com/McKayHartman/Fitness-Website/blob/main/cypress/e2e/login.cy.js
 **Video:** [Video of Acceptance Test](../../cypress/videos/login.cy.js.mp4)
 
 ## Validation
