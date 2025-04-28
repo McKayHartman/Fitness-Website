@@ -27,13 +27,22 @@ Grading criteria (7 points): adequate choice of a test framework, coverage of th
 
 
 **Framework:** Cypress
-This test used Cypress to write a script to have it log in and validate that the test user was navigated to their home page and the test user was successfully logged in.
+
+- This test used Cypress to write a script to have it log in and validate that the test user was navigated to their home page and the test user was successfully logged in.
 
 **Link to test script:** https://github.com/McKayHartman/Fitness-Website/blob/main/cypress/e2e/login.cy.js
 **Video:** [Video of Acceptance Test](../../cypress/videos/login.cy.js.mp4)
 
 ## Validation
 ### Script
+**Tasks Given to the User**
+1) Create an account.
+2) Login to the user account that you created.
+3) Navigate to the different pages.
+	- About
+	- Calendar
+	- Homepage
+**Questions**
 1) What is your impression of the website’s page layouts and the routing?
 2) On a scale of 1-10 what do you make of the goal tracking page?
 3) On a scale of 1-10 how inviting is the homepage?
@@ -56,6 +65,10 @@ This test used Cypress to write a script to have it log in and validate that the
 9) The user thought this website could address motivation more by being able to see progress on the homepage. He liked the visualization of progress through the graph, but thought it would be nicer to see something related to the streak on the homepage right when you log in. He also thought it would be nice to include some sort of a mascot for the website to help with motivation, referencing the Duolingo owl as an example.
 
 ### User Evaluation 2
+- User found it difficult to navigate from the home page to the calendar.
+- There is a big empty space at the bottom of the home page where the user expects an interface to be
+- The user has trouble logging in because where the login page says “username” the field required is actually the email address
+
 
 ### User Evaluation 3
 
