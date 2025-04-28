@@ -4,23 +4,22 @@ Fitness planning can be challenging for many people, leading to irregular and un
 Our system includes an accounts module ensuring that only authorized users can access their accounts using a correct password. Users register by supplying a unique username and email, and then log in to manage their personalized workouts. A workout contains several exercises. Users can schedule and update daily workouts, within their account which monitors completion rates. Furthermore, the goal system analyzes past workout data and suggests new routines based on specific workout tags that classify exercises by attributes like name, duration, muscle groups, and intensity. Beyond individual progress, the system encourages the community aspect of our website by enabling users to connect with friends, share achievements, and mutually support one another. Designed for both desktop and mobile use, the system emphasizes portability, usability, and minimal downtime to provide a seamless, fitness experience.
 
 ## Verification
-Verification aims to ensure that you correctly developed the product. 
+We used the Vitest framework for testing the project. For HTTP testing, we also used the Supertest library in order to simulate HTTP requests. The unit tests are stored in the [backend/test](https://github.com/McKayHartman/Fitness-Website/tree/main/backend/test)  folder. 
 
-For this deliverable, show an example of a unit test that uses mock objects to isolate the class from the rest of the system. 
+A simple example of a unit test case is such: the "[sameHash](https://github.com/McKayHartman/Fitness-Website/blob/main/backend/test/auth.test.js)" test tests if a hash comparison function works correctly by hashing a string and immediately comparing it with itself using the function.
 
-Test framework you used to develop your tests (e.g., JUnit, unittest, pytest, etc.)
-Link to your GitHub folder where your automated unit tests are located.
-An example of a test case that makes use of mock objects. Include in your answer a GitHub link to the class being tested and to the test.
-A print screen showing the result of the unit tests execution. 
-Grading criteria (5 points): adequate choice of a test framework, coverage of the tests, quality of the tests, adequate use of Mock objects, and a print screen showing successful test execution.
+```
+test('sameHash', async () => {
+    expect(await sameHash('x', await hash('x'))).toBe(true);
+})
+```
+
+Here are the results of the tests being run.
+![Successful test cases](./images/test-cases.jpg)
 
 ## Acceptance Test
+We used Cypress to write a script to have it log in and validate that the test user was navigated to their home page and the test user was successfully logged in.The acceptance test is stored here: [Acceptance Test Script](../../cypress/e2e/login.cy.js). <br>
 
-**Framework:** Cypress <br>
-
-- This test used Cypress to write a script to have it log in and validate that the test user was navigated to their home page and the test user was successfully logged in.
-
-**Link to test script:** [Acceptance Test Script](../../cypress/e2e/login.cy.js) <br>
 **Video:** [Acceptance Test](../../cypress/videos/login.cy.js.mp4) <br>
 
 ## Validation
