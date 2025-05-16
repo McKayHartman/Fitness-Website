@@ -8,6 +8,7 @@ import About from "./About.jsx";
 import { BrowserRouter, Routes, Route, createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import Header from "./Header.jsx";
 import CalendarPage from "./Calendar.jsx";
+import Workouts from "./Workouts.jsx";
 
 function HeaderWrapper(){
     return(
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
             {
                 path: "/login",
                 element: <Login />
+            },
+            {
+                path: "/workouts",
+                element: <Workouts />
             },
             {
                 path: "/register",
