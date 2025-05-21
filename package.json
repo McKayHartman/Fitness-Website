@@ -9,5 +9,8 @@
 		"onlyBuiltDependencies": [
 			"cypress"
 		]
+	},
+	"dependencies": {
+		"use-immer": "^0.11.0"
 	}
 }
