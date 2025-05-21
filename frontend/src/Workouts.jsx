@@ -12,6 +12,8 @@ function Workouts() {
     const repsRef = useRef(null);
     const weightRef = useRef(null);
     const notesRef = useRef(null);
+    const dateRef = useRef(null);
+    const difficultyRef = useRef(null);
 
     function swapInputs() {
         const exercise = loggedWorkout.exercises[exerciseNum] ?? {};
@@ -19,19 +21,40 @@ function Workouts() {
         repsRef.current.value = exercise.reps ?? "";
         weightRef.current.value = exercise.weight ?? "";
         notesRef.current.value = exercise.weight ?? "";
+        difficultyRef.current.value = exercise.difficulty ?? "";
     }
 
     function handleExerciseChange(e, element, isNumber) {
         setLoggedWorkout((workout) => {
-            workout.exercises[exerciseNum][element] = isNumber
-                ? Number(e.target.value)
-                : e.target.value;
+            workout.exercises[exerciseNum][element] = 
+                isNumber ? Number(e.target.value) : e.target.value;
         });
     }
 
-    function handleSubmit(e) {
+    async function handleSubmit(e) {
         e.preventDefault();
         console.log(loggedWorkout);
+
+        
+        try {
+            const response = await fetch("http://localhost:3000/api/db/createWorkout", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "Authorization": `Basic ${localStorage.getItem("token")}`
+                },
+                body: JSON.stringify(loggedWorkout),
+            });
+
+            if (response.ok) {
+                console.log(await response);
+            } else {
+                console.error("Workout log failed");
+            }
+        } catch (error) {
+            console.log("log error");
+            console.error(error);
+        }
     }
 
     function getCurrentDate() {
@@ -40,18 +63,20 @@ function Workouts() {
                `-${String(new Date().getDate()).padStart(2, "0")}`)
     }
 
+    // every time exerciseNum is changed, swapInputs is run.
     useEffect(() => {
         swapInputs();
     }, [exerciseNum]);
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={(e) => handleSubmit(e)}>
             <h1>Log Workout</h1>
             <input
                 type="date"
                 defaultValue={getCurrentDate()}
                 max={getCurrentDate()}
                 id="workoutDate"
+                ref={dateRef}
             />
             <div className="exercise-picker">
                 <button
@@ -83,7 +108,7 @@ function Workouts() {
             <p>type</p>
             <input
                 ref={typeRef}
-                onChange={(e) => handleExerciseChange(e, "type")}
+                onChange={(e) => handleExerciseChange(e, "typeID", true)}
             />
             <p>reps</p>
             <input
@@ -94,6 +119,11 @@ function Workouts() {
             <input
                 ref={weightRef}
                 onChange={(e) => handleExerciseChange(e, "weight", true)}
+            />
+            <p>difficulty</p>
+            <input
+                ref={difficultyRef}
+                onChange={(e) => handleExerciseChange(e, "difficulty", true)}
             />
             <p>notes</p>
             <input

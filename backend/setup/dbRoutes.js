@@ -12,23 +12,23 @@ const db = drizzle(process.env.DB_FILE_NAME);
 const dbRoutes = Router();
 
 dbRoutes.post("/createWorkout", authenticateToken, async (req, res) => {
-    email = req.user;
+    const email = req.user;
     const [user] = await db
         .select()
         .from(usersTable)
         .where(eq(usersTable.email, email));
-    const { exercises, planned } = req;
+    const { exercises, planned } = req.body;
     const plannedInt = planned ? 1 : 0;
     const currentDate = new Date().toISOString();
 
-    const workoutResult = await db
+    const [workoutResult] = await db
         .insert(workoutTable)
         .values({
-            userID: user.id,
+            userId: user.id,
             workoutPlanned: plannedInt,
             workoutDate: currentDate,
         })
-        .returning({ workoutID });
+        .returning({ workoutID: workoutTable.workoutID });
 
     console.log(workoutResult);
 
@@ -43,7 +43,9 @@ dbRoutes.post("/createWorkout", authenticateToken, async (req, res) => {
                 reps: exercise.reps,
                 weight: exercise.weight,
                 duration: exercise.duration,
-            });
+            })
+            .returning({ exerciseID: exerciseTable.exerciseID});
+        console.log(exerciseResult);
     });
 
     res.sendStatus(201);
